@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 35%;
+            display: flex;
+        }
+    </style>
+        <!-- Mensch Wert:  1        2          3         4          5         6                         -->
+    <script> //  PC Wert:  0        1          2         3          4         5            
+        let images = ['z1.jpg', 'z2.jpg', 'z3.jpg', 'z4.jpg', 'z5.jpg', 'z6.jpg'];
+        let currentImage = 0;
+
+        function start() {
+            showImage(currentImage);
+            currentImage++;
+                                         // ACHTUNG: bei if heißt ==5  bis einschliesslich Position 5 (Menschlich gezählt) hier ist es nichts so das er wie ein PC position ab 0 beginnt zu zählen  sondern mit 1 !! also das bild z1.jpg hat Position 1 und nicht 0
+            if (currentImage == 5) {    // wenn du Position mit Wert 5 erreichst dann
+                currentImage = 0;       // bist du wieder Wert 0, damit erschaffst du Dauerschleife innerhalb deiner Wert Position von 0 bis 5
+            }
+ 
+            setTimeout(start, 500)
+        }
+
+        function showImage(apfel) {
+            document.getElementById('image').src = images[apfel];
+        }
+
+    </script>
+
+</head>
+
+<body onload="start()">
+    <img id="image" src="z1.jpg">
+</body>
+
+</html>

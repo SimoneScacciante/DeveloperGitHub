@@ -1,0 +1,251 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.layoutContainer {
+    display: flex;
+    margin-left: 115px;
+
+}
+
+/* ================== CONTENT ============= */
+
+.contentContainerSize {
+    width: calc(600px * 0.8);
+    font-size: 14px;
+
+}
+
+.contentProfileImg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+
+    /* border: 1px solid rgb(243, 243, 243); */
+
+}
+
+
+
+
+.menu {
+    padding: 10px;
+}
+
+.contentHeaderContainer {
+    display: flex;
+    padding-bottom: 14px;
+    justify-content: space-between;
+}
+
+.contentHeaderLeft {
+    display: flex;
+}
+
+.contentUserLocation {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+
+
+.contentImg {
+    height: calc(600px * 1);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.contentBtns1 {
+    display: flex;
+    padding-top: 12px;
+    justify-content: space-between;
+}
+
+
+
+.contentBtnsRight {
+    padding-left: 175px;
+}
+
+.contentIcon {
+    height: 28px;
+    padding-right: 10px;
+}
+
+.contentHeartIcon {
+    height: 32px;
+}
+
+.contentHeartIcon:hover {
+    cursor: pointer;
+}
+
+.contentIconBookmark {
+    padding-left: 85px;
+    height: 28px;
+}
+
+
+
+.contentLike {
+    padding: 4px;
+}
+
+
+
+.contentDescriptionContainer {
+    display: flex;
+}
+
+.contentDescription {
+    padding-left: 35px;
+}
+
+
+.contentCommentStyle {
+    padding-left: 78px;
+}
+
+
+
+
+.contentInputContainer {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.contantInputSmilieContainer {
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.contentSmileyIcon {
+    height: 18px;
+    padding-top: 4px;
+}
+
+.contentInputAdd {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #129AF7;
+    Cursor: pointer;
+
+}
+
+input {
+    border: 0;
+    padding-right: 225px;
+}
+
+
+
+
+
+/* ================== NAV-LEFT ============= */
+
+.navLeftBar {
+    width: 225px;
+    padding: 35px 0px 0px 25px;
+    border-right: 1px solid #DBDBDB;
+}
+
+
+
+.navBtns {
+    display: flex;
+    padding: 15px;
+}
+
+.navFont {
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.navLogo {
+    padding-bottom: 35px;
+}
+
+.navLogoImg {
+    height: 25px;
+}
+
+.navProfile {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+}
+
+
+.navIcon {
+    height: 25px;
+}
+
+.moreNav {
+    position: absolute;
+    bottom: 60px;
+}
+
+
+
+
+/*
+===========FÜEGE DIESEN CODE ERST WENN DU MEDIA SCREEN VERWENDEST, 
+bei kleinere Screen auflösung soll beschreibung verschwieden
+
+.screenreaderOnly {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+}
+*/
+
+
+
+
+
+/* ================== MIDDLE-Layout (Story + Contant) ============= */
+
+.middleLayoutContainer {
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.storyContainer {
+    display: flex;
+    padding-bottom: 65px;
+    justify-content: center;
+}
+
+.storyStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storyImg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 55px;
+    height: 55px;
+}
+
+
+/* ================== NAV-Right (Suggestion Bar) ============= */
+
+.suggRightBar {
+    background-color: rgb(12, 37, 182);
+    width: 280px;
+}

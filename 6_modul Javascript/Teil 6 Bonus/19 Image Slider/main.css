@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+}
+
+.slider-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

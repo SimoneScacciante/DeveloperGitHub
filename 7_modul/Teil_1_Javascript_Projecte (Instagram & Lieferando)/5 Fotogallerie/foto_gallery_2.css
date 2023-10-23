@@ -1,0 +1,44 @@
+
+
+.title {
+    font-family: 'Abel', sans-serif;
+}
+
+
+.head-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#photo-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+
+
+.imgbox {
+    display: flex;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+
+    background-color: red;
+    justify-content: center;
+    width: 100px;
+}
+
+.imgContainer {
+    height: 50px;
+    display: flex;
+
+    background-color: red;
+    justify-content: center;
+    width: 100px;
+}
+
+.imgbox:hover {
+    box-shadow: 10px 10px 5px #000000;                    
+}

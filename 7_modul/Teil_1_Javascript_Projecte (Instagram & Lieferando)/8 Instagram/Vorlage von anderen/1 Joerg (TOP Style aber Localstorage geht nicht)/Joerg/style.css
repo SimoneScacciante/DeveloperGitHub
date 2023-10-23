@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+/* =========== LAYOUT =========== */
+body {
+    display: flex;
+}
+.placeholder {
+    width: 340px;
+}
+.navLeft {
+    position: fixed;
+   width: 340px;
+   height: 100vh;
+   padding: 10px;
+   border-right: 1px solid #DBDBDB;;
+}
+.navBottom {
+    display: none;
+    position: fixed;
+    background: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.layoutContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 32px;
+}
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+}
+.storys {
+    width: 630px;
+    height: 117px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 630px;
+    height: 500px;
+    padding: 0 px;
+}
+.suggestionsSidebar {
+    padding-top: 24px;
+    width: 383px;
+    padding-left: 64px;
+}
+/* ========== NAVIGATION ======= */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.menuBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 32px;
+}
+.logo {
+    width: 220px;
+    height: 82px;
+    padding: 25px 12px;
+    margin-bottom: 8px;
+}
+.logoSmallScreen {
+    display: none;
+    width: 48px;
+    height: 82px;
+    padding: 25px 12px;
+    margin-bottom: 8px;
+}
+.logoSmallScreen img {
+    width: 28px;
+    height: 29px;
+    margin-left: 4px;
+    margin-bottom: 32px;
+}
+.logo img {
+    width: 120px;
+    height: 55px;
+}
+.navRows {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 12px;
+    margin: 4px 0; 
+    transition: .12s;
+    cursor: pointer;
+}
+.navRows:hover {
+    background-color: #F2F2F2;
+    border-radius: 10%;
+}
+.activeSite {
+    font-weight: bold;
+}
+i {
+    font-size: 28px;
+}
+.navRows span {
+    margin-left: 16px;
+
+}
+.navMehr {
+    position: absolute;
+    width: 94%;
+    bottom: 20px;
+}
+nav img {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-left: 4px;
+}
+/* ================== Storys ============= */
+.storys {
+    display: flex;
+    gap: 14px;
+}
+.storyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.storyProfilePicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+    background-image: linear-gradient(45deg, rgba(255,197,2,1) 0%, rgba(255,32,78,1) 47%, rgba(210,0,196,1) 100%);
+}
+.storyProfilePicture img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+.storyContainer span {
+    
+    font-size: 12px;
+}
+/* =============== SIDEBAR =============== */
+.suggContainer {
+    display: flex;
+    width: 100%;
+}
+.suggContainer img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid rgb(243, 243, 243);
+}
+.suggContainer p {
+    margin-left: 16px;
+}
+.fullName, .profileNameBold {
+    font-size: 14px;
+}
+.profileNameBold {
+    font-weight: 500;
+}
+.changeUser, .follow {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #129AF7;
+    margin-left: auto;
+    cursor: pointer;
+}
+.changeUser:hover, .follow:hover {
+    color: #0d5ae7;
+}
+
+.suggForYou {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    
+}
+.suggForYouFont {
+    font-size: 14px;
+    color: #7B7B7B;
+    cursor: pointer;
+}
+.suggfollow, .sugglinks {
+    padding: 8px 16px;
+}
+.followNames, .sugglinks {
+    font-size: 12px;
+    line-height: 20px;
+}
+.sugglinks {
+    color: #d3d3d3;
+}
+/* ========= CONTENT ========= */
+.headerSmallScreenContainer {
+    display: none;
+}
+.headerSmallScreen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 16px;
+}
+.headerSmallScreen img {
+    height: 29px;
+}
+.contentContainerSize {
+    width: 470px;
+}
+.contentProfilePicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background-image: linear-gradient(45deg, rgba(255,197,2,1) 0%, rgba(255,32,78,1) 47%, rgba(210,0,196,1) 100%);
+}
+.contentProfilePicture img {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+.contentHeader {
+    width: 470px;
+}
+.contentLocation {
+    font-size: 12px;
+    line-height: 20px;
+}
+.marginLeft {
+    margin-left: 16px;
+}
+.dots {
+    margin-left: auto;
+    cursor: pointer;
+    opacity: .5;
+}
+.likes {
+    margin-bottom: 4px;
+}
+.likeHeart {
+    cursor: pointer;
+}
+.likeRed {
+    color: rgb(226, 10, 10);
+}
+.contentImage img {
+    width: 470px;
+    max-height: 585px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.contentBtns {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.contentBtnsLeft {
+    height: 100%;
+    display: flex;
+    padding: 8px 0;
+    gap: 16px;
+}
+
+.fontSize14 {
+    font-size: 14px;
+}
+.bold {
+    font-weight: 500;
+}
+.comment {
+    margin-left: 8px;
+}
+input {
+    margin-top: 4px;
+    outline: none;
+    border: 0;
+}
+.inputContainer {
+    display: flex;
+    align-items: center;
+}
+.smilie {
+    margin-left: 8px;
+    font-size: 15px;
+}
+hr {
+    opacity: 0.5;
+}
+
+/* === Search === */
+.searchbar {
+    color: #7B7B7B;
+    display: flex;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    margin: 0 16px;
+}
+.searchbar i {
+    font-size: 20px;
+    padding: 8px;
+}
+
+input[type="search"]  {
+    color: #7B7B7B;
+    background-color:#EFEFEF;
+    border-radius: 10px;
+    height: 32px;
+}
+input[type="search"]::placeholder {
+    color: #7B7B7B;
+}
+/* ================= MEDIA QUERYS ========== */
+@media only screen and (max-width: 1920px) {
+    .navLeft, .placeholder {
+        width: 240px;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    .navLeft, .placeholder {
+        width: 92px;
+        overflow: hidden;
+    }
+    .navLeft span {
+        display: none;
+    }
+    .logoSmallScreen {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1320px) {
+    .suggestionsSidebar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .headerSmallScreenContainer {
+        display: block;
+    }
+    .navLeft, .placeholder {
+        display: none;
+    }
+    .navBottom {
+        display: flex;
+    }
+    .content, .storys {
+        width: 100%;
+        padding: 0 8px;
+        height: 100%;
+    }
+    .contentContainer {
+        overflow: hidden;
+    }
+    .contentHeader, .contentContainerSize {
+        width: 100%;
+    }
+    .contentImage img {
+        width: 100%;
+        max-height: 585px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .logoTextTop {
+        display: none;
+    }
+}

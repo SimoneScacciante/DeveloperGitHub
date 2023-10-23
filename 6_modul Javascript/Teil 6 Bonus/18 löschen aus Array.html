@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let names = ['Davide', 'Clara', 'Christian', 'Petra'];
+
+        for (let i = 0; i < names.length; i++) {
+            console.log('Hallo ' + names[i]);
+        }
+
+        function addNames() {
+            let apfel = document.getElementById('list');
+            list.innerHTML = '';
+
+            for (let i = 0; i < names.length; i++) {
+                let birne = document.createElement('li');
+                birne.innerHTML = names[i] + ' <a href="#" onclick="deleteItem(' + i + ')">X</a>';
+                apfel.appendChild(birne);
+            }
+        }
+
+        function deleteItem(i) {
+            names.splice(i, 1);
+            addNames();
+        }
+
+        function addCurrentName() {
+            if (names.length <= 5) {
+                let currentName = document.getElementById('new-name').value = '';
+                names.push(currentName);
+
+                addNames();
+            } else {
+                alert('Arbeite erstmal die anderen Aufgaben ab');
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="addNames()">
+    <h1>Aufgaben</h1>
+    <ul id='list'>
+    </ul>
+
+    <input id="new-name" placeholder="Name deines Freundes"> <button onclick="addCurrentName()">Hinzufügen</button>
+</body>
+
+</html>

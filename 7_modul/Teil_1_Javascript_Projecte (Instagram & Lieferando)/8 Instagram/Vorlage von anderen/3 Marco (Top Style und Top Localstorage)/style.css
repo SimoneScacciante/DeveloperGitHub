@@ -1,0 +1,581 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.InstaLogoSmall {
+    display: none !important;
+}
+
+.InstaLogoSmall img {
+    height: 40px;
+}
+
+.colorLG {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.colorLG-Darker {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.fs12 {
+    font-size: 12px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.lightblue {
+    color: rgb(0, 149, 246);
+}
+
+.fw-Bold {
+    font-weight: 500;
+}
+
+aside {
+    position: fixed;
+    width: 221px;
+    padding: 32px 12px 20px 12px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.growbox {
+    min-height: calc(100vh - 52px);
+    display: flex;
+    flex-direction: column;
+}
+
+.logoBox {
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.Logo {
+    padding: 25px 12px 16px 12px;
+    height: 29px;
+    margin-bottom: 19px;
+    margin-top: 7px;
+}
+
+.asideTop {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.asideTop nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.aside-Nav {
+    margin: 4px 0px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.aside-Nav:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+main {
+    margin-left: 245px;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+.content-section {
+    display: flex;
+    width: 100%;
+    padding-top: 56px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600px;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.right-content {
+    width: 320px;
+    padding-left: 64px;
+}
+
+.subscriptionsReels-section {
+    display: flex;
+    width: 630px;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 0px;
+    background: rgba(0, 0, 0, 0.01);
+    /* make scrollbar transparent */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.subscriptionProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 17px;
+    scroll-snap-align: center;
+}
+
+.subscriptionProfile span {
+    margin-top: 6px;
+}
+
+.avatar-Subscriptions {
+    height: 64px;
+    width: 64px;
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px inset red;
+    cursor: pointer;
+}
+
+.posts-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    padding: 10px;
+    margin-bottom: 32px;
+    box-shadow: 0px 3px 6px 1px rgb(0 0 0 / 14%);
+}
+
+.postHeadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.postHeadline a {
+    padding-bottom: 5px;
+}
+
+.liked-Text {
+    margin-bottom: 4px;
+}
+
+.postText {
+    margin-bottom: 8px;
+}
+
+.comments-Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    margin-top: 8px;
+}
+
+.comment-here {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.comment-input {
+    padding-left: 8px;
+    border: none;
+    width: 100%;
+    height: 32px;
+}
+
+.comment-btn {
+    cursor: pointer;
+    height: 32px;
+    margin-left: 8px;
+    border: none;
+    background-color: white;
+}
+
+.uploader {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-uploader {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px inset red;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.uploader-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.dot-icon {
+    width: 16px;
+}
+
+.postMedia img {
+    width: 480px;
+    border-radius: 4px;
+}
+
+.postInteraction-Bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.postInteractionIcons-right img {
+    height: 20px;
+    width: 18px;
+}
+
+.icon {
+    height: 22px;
+}
+
+.likeheart {
+    cursor: pointer;
+}
+
+.iconbottom {
+    height: 30px;
+}
+
+.iconProfile {
+    height: 26px;
+}
+
+.iconbottomProfile {
+    height: 36px;
+}
+
+.radius50 {
+    border-radius: 50%;
+}
+
+.avatar-suggested {
+    height: 44px;
+    width: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.copyright-icon {
+    height: 16px;
+}
+
+.myProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mp-left {
+    display: flex;
+}
+
+.myProfile-Names {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+}
+
+.suggested-Profiles {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.sp-title {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggested-Profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.sp-left {
+    display: flex;
+    align-items: center;
+}
+
+.suggestedProfile-Names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8px;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.4);
+    margin: 3px;
+}
+
+footer span {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.copyright a {
+    text-decoration: underline;
+}
+
+.bottomMenu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    box-shadow: 0px -2px 8px 0px rgb(0 0 0 / 14%);
+}
+
+.bottomMenu nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding: 0 24px;
+    background-color: white;
+}
+
+@media (max-width: 1250px) {
+    .logoBox img {
+        display: none;
+    }
+    .InstaLogoSmall {
+        display: unset !important;
+    }
+    aside {
+        width: 50px;
+    }
+    .asideTop nav {
+        align-items: center;
+    }
+    .navSpan {
+        display: none;
+    }
+    main {
+        margin-left: 78px;
+    }
+    .logoBox {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .right-content {
+        display: none;
+    }
+}
+
+@media (max-width: 725px) {
+    .content-section {
+        padding-left: 0;
+    }
+    .content-section {
+        padding-top: 20px;
+    }
+    .subscriptionsReels-section {
+        width: 500px;
+    }
+}
+
+@media (max-width: 680px) {
+    .content-section {
+        padding-left: 0;
+    }
+    .main-content {
+        width: 500px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    aside {
+        display: none !important;
+    }
+    .content-section {
+        margin: 0;
+        padding-top: 20px;
+    }
+    .posts-section {
+        padding-bottom: 50px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottomMenu {
+        display: unset;
+    }
+    .bottomMenu nav {
+        display: flex;
+        background-color: white;
+    }
+    .subscriptionsReels-section {
+        width: 450px;
+    }
+    .subscriptionsReels-section {
+        width: 510px;
+    }
+    .avatar-Subscriptions {
+        height: 55px;
+        width: 55px;
+    }
+    .subscriptionProfile {
+        margin: 0 14px;
+    }
+}
+
+@media (max-width: 510px) {
+    .iconbottom {
+        height: 25px;
+    }
+    .iconbottomProfile {
+        height: 28px;
+    }
+    .post {
+        width: 100vw;
+        padding: 0;
+    }
+    .posts-section {
+        width: 100vw;
+    }
+    .postMedia img {
+        width: 100vw;
+        border-radius: 0;
+    }
+    .postMedia {
+        display: flex;
+        justify-content: center;
+    }
+    .postHeadline {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .postInteraction-Bar {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .liked-Text {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .postText {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .comments-Container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .subscriptionsReels-section {
+        width: 450px;
+    }
+    .avatar-Subscriptions {
+        height: 45px;
+        width: 45px;
+    }
+    .subscriptionProfile {
+        margin: 0 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    .subscriptionsReels-section {
+        width: 370px;
+    }
+    .avatar-Subscriptions {
+        height: 40px;
+        width: 40px;
+    }
+    .subscriptionProfile {
+        margin: 0 10px;
+    }
+}

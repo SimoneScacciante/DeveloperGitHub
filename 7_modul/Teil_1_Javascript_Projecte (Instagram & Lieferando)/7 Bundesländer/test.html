@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body onload="render()">
+
+    <div id="content">
+
+    </div>
+
+
+    <script>
+
+        let bundeslaender =
+            [
+
+                {
+                    "name": "Baden-Württemberg",
+                    "population": 11.1,
+                    "url": "https://www.baden-wuerttemberg.de/de/de/startseite/",
+                    "comments": [],
+                },
+
+                {
+                    "name": "Bayern",
+                    "population": 13.1,
+                    "url": "https://www.bayern.de",
+                    "comments": ['Tolles Wetter und gute Wander-Routen', 'München ist eine schöne Stadt']
+                },
+
+                {
+                    "name": "Berlin",
+                    "population": 6.4,
+                    "url": "https://www.Berlin.de",
+                    "comments": ['Ich bin ein Berliner!']
+                },
+
+            ]
+
+
+
+
+
+
+
+
+
+
+        function render() {
+
+            let content = document.getElementById('content');
+            content.innerHTML = '';
+
+            for (i = 0; i < bundeslaender.length; i++) {
+                const land = bundeslaender[i];
+
+                content.innerHTML += `
+                
+                <div class="card"> 
+
+                   <h2> ${land['name']} </h2>
+
+                    <div id="landcontent${i}"> 
+                        <input id="input${i}"><button onclick="addComment(${i})">OK</button>
+                    </div>
+
+                </div>
+                `
+
+
+                let landcontent = document.getElementById(`landcontent${i}`);
+
+                for (let j = 0; j < land['comments'].length; j++) {
+                    const comment = land['comments'][j];
+
+                    landcontent.innerHTML += `
+                    <div>${comment}</div>
+                    `
+                }
+            }
+        }
+
+
+
+        function addComment(i) {
+            let input = document.getElementById(`input${i}`);
+            bundeslaender[i]['comments'].push(input.value);
+
+
+            render();
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

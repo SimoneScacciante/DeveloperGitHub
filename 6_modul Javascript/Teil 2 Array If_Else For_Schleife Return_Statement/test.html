@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+
+    <script>
+
+        let names = [];
+
+
+        function savename() {
+            let name = document.getElementById('input').value;
+            names.push(name);
+            setArray('name1',names);
+
+            document.getElementById('myText').innerHTML = `${names} ist jetzt hier`
+        }
+
+        function loadname () {
+           let name = localStorage.getItem('name1');
+
+            document.getElementById('myText').innerHTML = `Motherfucker ${name} Jooo`
+        }
+
+        function setArray (key, array) {
+            localStorage.setItem(key, JSON.stringify(array))
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1 id="myText"> </h1>
+
+    <button onclick="loadname()">wer war da?</button>
+    <input id="input">
+    <button onclick="savename()"> Hinzufügen</button>
+
+</body>
+
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 35%;
+            display: flex;
+        }
+    </style>
+
+    <script> // Wert:   0          1         2         3         4         5
+        let images = ['z1.jpg', 'z2.jpg', 'z3.jpg', 'z4.jpg', 'z5.jpg', 'z6.jpg'];
+        let i = 0;  /* änderst du hier 0 auf z.B 2, dann startet (z3.jpg)*/  
+        
+        function banana_1() {
+            document.getElementById('image').src = images[i]; // I = Wert 0
+            i++;
+            setTimeout(banana_2, 1000);
+        }
+
+        function banana_2() {
+            document.getElementById('image').src = images[i]; // I = Wert 1, da +1 von  voherige funktion banana_1 bekommt
+            i++;
+            setTimeout(banana_3, 1000);
+        }
+
+        function banana_3() {
+            document.getElementById('image').src = images[i]; // I = Wert 2, da +1 von banana_1 funktion und +1 von banana_2 funktion = Wert 2
+            i++;
+            setTimeout(banana_4, 1000);
+        }
+
+        function banana_4() {
+            document.getElementById('image').src = images[i]; // I = Wert 3
+            i++;
+            setTimeout(banana_5, 1000);
+        }
+
+        function banana_5() {
+            document.getElementById('image').src = images[i]; // I = Wert 4
+            i++;
+            setTimeout(banana_6, 1000);
+        }
+
+        function banana_6() {
+            document.getElementById('image').src = images[i]; // I = Wert 5
+            i = 0;
+            setTimeout(banana_1, 1000);
+        }
+
+    </script>
+
+</head>
+
+<body onload="banana_1()">
+
+    <img id="image" src="test.jpg">
+    
+    <!--wenn du in src was schreibst (test.jpg) dann 
+     wird nur so lange Bild angezeigt bis body geladen ist
+    sobald <body> komplett geladen ist wird die funktion
+    <bod> onload="banana_1()" sofort gestartet, 
+     dann läuft funktion ohne das hier das bild (test.jpg)
+    wieder angezeigt wird -->
+
+<!-- sdfsdf -->
+
+</body>
+
+</html>

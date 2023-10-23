@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 35%;
+            display: flex;
+        }
+    </style>
+
+    <script>
+        function image1() {
+            document.getElementById('image').src = 'z1.jpg';
+            setTimeout(image2, 1000);
+        }
+
+        function image2() {
+            document.getElementById('image').src = 'z2.jpg';
+            setTimeout(image3, 1000);
+        }
+
+        function image3() {
+            document.getElementById('image').src = 'z3.jpg';
+            setTimeout(image1, 1000);
+        }
+
+    </script>
+
+</head>
+
+<body onload="image1()">
+
+    <img id="image" src="z1.jpg">
+
+</body>
+
+</html>

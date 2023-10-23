@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+
+    <script>
+
+        function calc() {
+            let number = +document.getElementById('input').value;
+
+            alert(getResultText(number, powerOf2(number)));
+        }
+
+        function powerOf2(x) {
+            return x * x;
+        }
+
+        function getResultText(number, result) { // diese number funktion greif nicht auf obere number zu, siehe Aufgabe 11.4 zur verdeutligung
+            return `The result of  ${number}² is ${result}`;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="input"> <button onclick="calc()">Calc </button>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.header-impressum {
+    background-image: url("/images/2impressum.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.impressum-container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(99, 99, 99);
+}
+
+.impressum-container-2 {
+    position: absolute;
+    top: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 440px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px rgb(0 0 0 / 20%)
+}
+
+.impressum-container-2 h2 {
+    margin-bottom: 25px;
+}
+
+p:nth-child(2) {
+    margin-top: 5px;
+}
+
+

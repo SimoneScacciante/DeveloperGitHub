@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.title {
+    font-family: 'Abel', sans-serif;
+    padding-right: 27px;
+}
+
+
+.head-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 28px;
+}
+
+
+.logo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    /* property ??*/
+    background: black;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.backspace {
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+
+}
+
+
+.right-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-right: 5px;
+
+}
+
+
+.left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    margin-left: 5px;
+}
+
+
+
+#photo-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+
+
+.imgbox {
+    display: flex;
+    height: 250px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.imgbox:hover {
+    box-shadow: 10px 10px 5px #000000;
+    -moz-box-shadow: 0px 10px 5px #000000;
+    -webkit-box-shadow: 0px 10px 5px #000000;
+}
+
+
+
+#full-img {
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    max-height: 85%;
+
+}
+
+
+.d-none {
+    display: none;
+}
+
+
+@media (max-width: 1030px) {
+    .backspace {
+        position: absolute;
+        top: 88px;
+        left: 81px;
+
+    }
+
+
+}
+
+@media (max-width: 950px) {
+    #full-img {
+        max-width: 70%;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    #full-img {
+        max-width: 65%;
+    }
+
+    .backspace {
+        height: 31px;
+        position: absolute;
+        top: 266px;
+        left: 104px;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+    img {
+        width: 300px;
+    }
+
+    .logo {
+        height: 85px;
+        margin-right: 42px;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-left: 47px;
+    }
+
+    #backspace-icon {
+        width: 31px !important;
+    }
+
+    #left-arrow-pic {
+        width: 42px !important;
+
+    }
+
+    #right-arrow-pic {
+        width: 42px !important;
+    }
+
+
+}

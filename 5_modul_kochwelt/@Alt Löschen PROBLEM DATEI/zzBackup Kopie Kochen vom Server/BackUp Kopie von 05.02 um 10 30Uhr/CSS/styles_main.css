@@ -1,0 +1,176 @@
+.top-section-container {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 50px;
+}
+
+.middle-section-img {
+    width: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.recept-btn {
+    font-size: 18px;
+    background-color: green;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-section {    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: start;
+    height: 225px;
+}
+
+.top-section h2 {
+    text-align: start;
+    margin-bottom: 0;
+}
+
+.try-description-h2 {
+    text-align: center;
+    background-color: var(--bg2-background);
+    padding: 30px;
+}
+
+
+.middle-section-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 50px;
+    background-color: var(--bg2-background);
+    padding-bottom: 30px;
+
+    flex-wrap: wrap;
+}
+
+.middle-section-container p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.middle-pictures {
+    width: 400px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 50px;
+    padding-bottom: 34px;
+    padding-top: 35px;
+}
+
+.arrow-img {
+    height: 80px;
+    width: 60px;
+    margin-top: 70px;
+}
+
+
+
+
+@media(max-width:1325px) {
+
+    .top-section h2 {
+        text-align: center;
+    }
+
+    .top-section p {
+        text-align: center;
+        padding: 16px;
+    }
+
+    .bottom-section-container p, h2 {
+        text-align: center; 
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .try-description-h2 {
+        padding: 20px;
+    }
+
+    .top-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-section-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .rezept-button {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:921px) {
+    .middle-section-img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .middle-pictures {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+
+@media(max-width:600px) {
+
+.top-section {
+    height: 300px;
+}
+
+    .middle-section-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .middle-pictures {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media(max-width:400px) {
+
+    .top-section {
+        height: 350px;
+        padding-top: 15px;
+    }
+
+    .middle-section-img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .middle-pictures {
+        width: 250px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,38 @@
+@ALLE PROBBEME ZU LÖSEN:
+
+
+
+- Alle bilder Radius setzten
+
+
+- Pfeil tasten funktionen aktivieren (rechts, links, und ESC Button)
+
+- Main Page // Footer // Head Section in extra Template setzten
+
+- Impressum und Datenschutz einfügen 
+
+- Social Logo (Funktion)
+
+
+
+- Mouse hover effekt auf Bild verhindern
+@Simon
+Ich habe das Problem das sobald ich ein Bild von der Foto Gallerie öffne.. erscheint ein Mousehover effekt auf das eben von mir geöffnete Bild. Wie kann ich verhindern das dieser Effekt auf mein Popup Fenster übergeht?
+
+@Tobias
+Hey Simone, du könntest für den Zeitraum, in dem dein Bild geöffnet ist, bei den anderen Bilder die Eigenschaft "pointer events" verändern. Schau dir Mal diesen Artikel dazu an, ich glaube das sollte dir weiterhelfen: https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+
+
+@Simon
+Danke Annette stimmt die Funktion kann ich löschen :unschuldig:  zu Tobias danke für den Tipp! Ich dachte jetzt wenn ich das machen würde...
+.ImgPopup:hover {
+    pointer-events: none;
+}
+Dann würde es klappt, ich setzte ein none (für kein Hover effekt) in dem popup Bild aber es klappt leider auch nnicht? :verwirrt:
+
+@Tobias
+Es geht ja auch nicht um das große Bild im popup sondern um die kleinen, oder?
+
+
+
+

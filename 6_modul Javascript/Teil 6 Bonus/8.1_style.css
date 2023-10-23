@@ -1,0 +1,19 @@
+
+
+.animate {
+    animation: 1s fadeIn ease-in-out;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        font-size: 0;
+    }
+
+    to {
+        ocity: 1;
+        height: 100px;
+        font-size: 24px;
+    }
+}

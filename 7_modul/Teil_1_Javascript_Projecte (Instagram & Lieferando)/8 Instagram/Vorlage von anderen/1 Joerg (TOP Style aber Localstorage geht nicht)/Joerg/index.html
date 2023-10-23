@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaKram</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./icons/logosmall.png" type="image/x-icon">
+</head>
+<body onload="render()">
+    <!-- =============== NAVIGATION LEFT ===================-->
+    <div class="placeholder"></div>
+    <div class="navLeft">
+        <div class="logo">
+            <img src="./icons/logotext.png" alt="Logo">
+        </div>
+        <div class="logoSmallScreen">
+            <img src="./icons/logosmall.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="navRows"><i class='bx bxs-home'></i><span class="activeSite">Startseite</span></div>
+            <div class="navRows"><i class='bx bx-search'></i><span>Suche</span></div>
+            <div class="navRows"><i class='bx bx-compass' ></i><span>Entdecken</span></div>
+            <div class="navRows"><i class='bx bx-movie-play' ></i><span>Reels</span></div>
+            <div class="navRows"><i class='bx bx-paper-plane' ></i><span>Nachrichten</span></div>
+            <div class="navRows"><i class='bx bx-heart' ></i><span>Benachrichtigungen</span></div>
+            <div class="navRows"><i class='bx bx-plus-circle' ></i><span>Erstellen</span></div>
+            <div class="navRows"><img src="./img/profilepicture.jpg" alt=""><span>Profil</span></div>
+            <div class="navRows navMehr"><i class='bx bx-menu' ></i><span>Mehr</span></div>
+        </nav>
+    </div>
+    <!-- ============ NAVIGATION BOTTOM =================== -->
+    <div class="navBottom">
+        <nav class="menuBottom">
+            <div class="navRows"><i class='bx bxs-home'></i></span></div>
+            <div class="navRows"><i class='bx bx-compass' ></i></div>
+            <div class="navRows"><i class='bx bx-movie-play' ></i></div>
+            <div class="navRows"><i class='bx bx-plus-circle' ></i></div>
+            <div class="navRows"><i class='bx bx-paper-plane' ></i></div>
+            <div class="navRows"><img src="./img/profilepicture.jpg" alt=""></div>
+        </nav>
+    </div>
+    <!-- =================== CONTENT =================-->
+    <div class="layoutContainer">
+        
+        <div class="contentContainer">
+            <!-- header smallscreen-->
+            <div  class="headerSmallScreenContainer">
+                <div class="headerSmallScreen">
+                    <div class="logoTextTop">
+                        <img src="./icons/logotext.png" alt="Logo">
+                    </div>
+                    <div class="searchbar"><i class='bx bx-search'></i><input type="search" placeholder="SUCHEN"></div>
+                    <div>
+                        <i class='bx bx-heart' ></i>
+                    </div>
+                </div>
+                <hr>
+                <br>
+            </div>
+
+            <!-- header smallscreen end-->
+            <div class="storys">
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"><img src="./img/story1.jpg" alt=""></div>
+                    <span>Vikki</span>
+                </div>
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"></div>
+                    <span>Lena</span>
+                </div>
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"><img src="./img/story3.jpg" alt=""></div>
+                    <span>Julia</span>
+                </div>
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"><img src="./img/story4.jpg" alt=""></div>
+                    <span>Cat</span>
+                </div>
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"><img src="./img/story5.jpg" alt=""></div>
+                    <span>Sarah</span>
+                </div>
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"><img src="./img/story6.jpg" alt=""></div>
+                    <span>Eddy</span>
+                </div>
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"><img src="./img/story7.jpg" alt=""></div>
+                    <span>Tom</span>
+                </div>
+                <div class="storyContainer">
+                    <div class="storyProfilePicture"><img src="./img/story8.jpg" alt=""></div>
+                    <span>Coder</span>
+                </div>
+            </div>
+            <br>
+            <br>
+        <!-- =================================== CONTENT =========================== -->
+            <div class="content">
+                <div class="contentContainerSize">
+                    <div class="contentHeader">
+                        <div class="suggContainer">
+                            <div class="contentProfilePicture"><img src="./img/story5.jpg" alt=""></div>
+                            <div><p class="profileNameBold">Frauke</p><p class="contentLocation">Flensburg</p></div>
+                            <div class="dots"><i class='bx bx-dots-horizontal-rounded'></i></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="contentImage">
+                        <img src="./img/location1.jpg" alt="">
+                    </div>
+                    <div class="contentBtns">
+                        <div class="contentBtnsLeft">
+                            <i class='bx bx-heart btnSize' ></i>
+                            <i class='bx bx-comment' ></i>
+                            <i class='bx bx-paper-plane' ></i>
+                        </div>
+                        <div>
+                            <i class='bx bx-bookmark' ></i>
+                        </div>
+                    </div>
+                    <div class="comments fontSize14">
+                        <p class="likes bold">Gefällt 55 Mal</p>
+                        <br>
+                        <div class="commentContainer"><span class="bold">Frauke</span><span class="comment">Hier mein Kommentar</span><br></div>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Kommentieren...">
+                        <div class="changeUser"><span>Posten</span></div>
+                        <i class='bx bx-smile smilie' ></i>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <!------ REPEAT ---- -->
+                    <div class="contentHeader">
+                        <div class="suggContainer">
+                            <div class="contentProfilePicture"><img src="./img/story5.jpg" alt=""></div>
+                            <div><p class="profileNameBold">Frauke</p><p class="contentLocation">Flensburg</p></div>
+                            <div class="follow marginLeft"><span>Folgen</span></div>
+                            <div class="dots"><i class='bx bx-dots-horizontal-rounded'></i></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="contentImage">
+                        <img src="./img/location1.jpg" alt="">
+                    </div>
+                    <div class="contentBtns">
+                        <div class="contentBtnsLeft">
+                            <i class='bx bx-heart btnSize' ></i>
+                            <i class='bx bx-comment' ></i>
+                            <i class='bx bx-paper-plane' ></i>
+                        </div>
+                        <div>
+                            <i class='bx bx-bookmark' ></i>
+                        </div>
+                    </div>
+                    <div class="comments fontSize14">
+                        <p class="likes bold">Gefällt 55 Mal</p>
+                        <br>
+                        <div class="commentContainer"><span class="bold">Frauke</span><span class="comment">Hier mein Kommentar</span><br></div>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Kommentieren...">
+                        <div class="changeUser"><span>Posten</span></div>
+                        <i class='bx bx-smile smilie' ></i>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- ============================ SIDEBAR ===========================-->
+        <div class="suggestionsSidebar">
+            <div class="suggContainer">
+                <img src="./img/profilepicture.jpg" alt="">
+                <div><p class="profileNameBold">joergii</p><p class="fullName">Jörg Developer</p></div>
+                <div class="changeUser"><span>Wechseln</span></div>
+            </div>
+            <br>
+
+            <div class="suggForYou">
+                <span class="suggForYouFont">Vorschläge für dich</span>
+                <span>Alle ansehen</span>
+            </div>
+
+
+
+            <br>
+            <div class="suggContainer suggfollow">
+                <img src="./img/follow1.jpg" alt="">
+                <div><p class="profileNameBold">Frauke</p><p class="followNames">Felix, Jessy, Paul</p></div>
+                <div class="follow"><span>Folgen</span></div>
+            </div>
+            <div class="suggContainer suggfollow">
+                <img src="./img/follow2.jpg" alt="">
+                <div><p class="profileNameBold">Manuel</p><p class="followNames">Jens, Pauline, Nuhr</p></div>
+                <div class="follow"><span>Folgen</span></div>
+            </div>
+            <div class="suggContainer suggfollow">
+                <img src="./img/follow3.jpg" alt="">
+                <div><p class="profileNameBold">Lisas</p><p class="followNames">Patrick, Jan, Anne</p></div>
+                <div class="follow"><span>Folgen</span></div>
+            </div>
+            <div class="suggContainer suggfollow">
+                <img src="./img/follow4.jpg" alt="">
+                <div><p class="profileNameBold">Anastasia</p><p class="followNames">Sissy, Susi, Andreas/p></div>
+                <div class="follow"><span>Folgen</span></div>
+            </div>
+            <div class="suggContainer suggfollow">
+                <img src="./img/follow5.jpg" alt="">
+                <div><p class="profileNameBold">Felix</p><p class="followNames">Astrid, Oma, Paulchen</p></div>
+                <div class="follow"><span>Folgen</span></div>
+            </div>
+            <br>
+            <p class="suggContainer sugglinks">
+                Info Hilfe Presse API Jobs Datenrichtlinie Nutzungsbedingungen und Impressum <br><br>© 2023 INSTAKRAM
+            </p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .postStyle {
+            width: 200px;
+            height: 75px;
+            border: 1px solid lightgray;
+            padding: 8px;
+            margin-top: 32px;
+        }
+    </style>
+
+    <script>
+        let namesArray = [];
+        let postsArray = [];
+
+        function addPost() {
+            let text = document.getElementById('message').value;
+            let name = document.getElementById('name').value;
+
+            namesArray.push(name);
+            postsArray.push(text);
+
+            let myposts = document.getElementById('myposts');
+            myposts.innerHTML = '';
+
+            //statt "postsArray.length" kann auch "namesArray.length" stehen
+            for (let i = 0; i < postsArray.length; i++) {
+
+                myposts.innerHTML += `
+                <div class="postStyle">
+                <b>${namesArray[i]}</b><br>
+                ${postsArray[i]}
+                </div>
+                `;
+            } //Variable "posts[i]" neuste Eingabe erscheint individuell 
+            // da nun immer neuste im "Array" enthaltene Eingabe  erscheint in Chat 
+
+            document.getElementById('message').value = '';
+        }
+
+    </script>
+</head>
+
+
+
+<body>
+
+    <input type="text" id="name" placeholder="Dein Name"> 
+    <input type="text" id="message" placeholder="Neuer Post...">
+    <button onclick="addPost()">Posten</button>
+
+    <div id="myposts">
+    </div>
+
+</body>
+
+</html>

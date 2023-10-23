@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo universe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        .head-container {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-bottom: 28px;
+        }
+
+        .title_a_href {
+            display: flex;
+            text-decoration: none;
+            color: black;
+        }
+
+        .title {
+            font-family: 'Abel', sans-serif;
+            padding-right: 27px;
+            font-size: 40px;
+        }
+
+        .logo {
+            height: 100px;
+            margin-top: 10px;
+        }
+
+
+
+
+        .header-impressum {
+            background-image: url("/img/impressum_background.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .impressum-container-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        .impressum-container-2 h3 {
+            font-size: 16px;
+        }
+
+        .impressum-container-2 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 460px;
+            width: 600px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255, 0.6);
+            color: rgb(99, 99, 99);
+            box-shadow: 5px 5px 5px 2px rgb(0 0 0 / 20%)
+        }
+
+        .impressum-container-2 h2 {
+            margin-bottom: 25px;
+        }
+
+        p:nth-child(2) {
+            margin-top: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="head-container">
+
+        <a href="foto_gallery_5.html" class="title_a_href">
+            <h1 class="title">Photo universe</h1>
+            <img src="icon/gallery.ico" class="logo">
+        </a>
+
+    </div>
+
+
+    <div class="header-impressum">
+
+
+        <div class="impressum-container-1">
+
+            <div class="impressum-container-2">
+                <h2> Impressum</h2>
+                <h3>Angaben gemäß § 5 TMG</h3> <br>
+
+
+                <div class="ansprech-container">
+                    <p> <b> Ansprechpartner: </b> </p>
+                    <p>Simone Scacciante <br>
+                        Unter den Linden 8 <br>
+                        10117 Berlin </p> <br>
+                </div>
+
+                <div class="kontakt-container">
+                    <p><b>Kontakt:</b></p>
+                    <p> Telefon: <br> 07121-696921</p>
+
+
+                    <p> E-Mail: <br> <a href='mailto:captain-cook@web.de'>captain-cook@web.de</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 
+
+
+
+
+
+
+
+@media(max-width:1550px) {
+
+    .middle-section-img {
+        width: 400px;
+    }
+
+    .middle-pictures {
+        width: 320px;
+        height: 215px;
+    }
+
+
+    .bottom-section-container {
+        padding-top: 10px;
+        }
+
+    .salt-picture {
+        width: 400px;
+        height: 200px;
+        margin-top: 25px;
+    }
+
+
+}
+
+
+
+
+@media(max-width:1200px) {
+
+    .top-section {
+        height: 180px;
+    }
+
+    .top-section-container {
+        padding-bottom: 30px;
+    }
+
+    .middle-section-img {
+        width: 300px;
+    }
+
+    .middle-pictures {
+        width: 235px;
+        height: 155px;
+    }
+    
+    .recept-btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .top-section-container {
+        font-size: 13px;
+    }
+
+    .middle-section-container {
+        font-size: 13px;
+    }
+
+    .bottom-section-container {
+        font-size: 13px;
+    }
+
+    .try-description-h2 {
+        font-size: 13px;
+    }
+
+    .salt-picture {
+        width: 300px;
+        height: 150px;
+    }
+
+}
+
+
+@media(max-width:943px) {
+
+    .middle-section-img {
+        width: 250px;
+    }
+
+    .middle-pictures {
+        width: 200px;
+        height: 140px;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .top-section-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .middle-section-container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .bottom-section-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+}
+
+
+
+
+@media(max-width:760px) {
+
+    .hide-mobile-2 {
+        display: none;
+    }
+
+    .top-section-container {
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-top: 0px;
+    }
+
+    .top-section h2 {
+        text-align: center;
+    }
+
+    .top-section {
+        text-align: center;
+    }
+
+    .bottom-section-container {
+        text-align: center;
+
+    }
+
+}
+@media(max-width:370px) {
+    .top-section-container {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+}
+
+
+
+
+    -->
+
+
+
+
+</body>
+
+</html>

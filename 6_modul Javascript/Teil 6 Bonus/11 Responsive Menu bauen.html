@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .menu {
+            position: absolute;
+            right: 16px;
+            width: 50px;
+            top: 16px;
+            cursor: pointer;
+        }
+
+        .overlay-menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 100vh;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            background-color: white;
+            border-left: 1px solid black;
+            transform: translatex( 501px);
+            transition: all 225ms ease-in-out;
+        }
+
+        .show-overlay-menu {
+            transform: translatex(0px);
+        }
+
+        .close-button {
+            position:absolute;
+            top: 16px;
+            right: 16px;
+
+        }
+
+    </style>
+
+    <script>
+        function showMenu () {
+            document.getElementById('menu5').classList.add('show-overlay-menu');
+        }
+
+        function closeMenu () {
+            document.getElementById('menu5').classList.remove('show-overlay-menu');
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Responsive menu</h1>
+
+    <img onclick="showMenu()" class="menu" src="/img/icon.svg">
+
+    <div id="menu5" class="overlay-menu">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+
+        <button onclick="closeMenu()" class="close-button">Close</button>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dialog-bg {
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dialog {
+            height: 50vh;
+            width: 50vw;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 24px;
+        }
+    
+        .d-none {
+            display: none;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="dialogID" class="dialog-bg"> <!-- hier d-none "klasse" einfügen-->
+
+        <div class="dialog">
+            <h1>Dialog</h1>
+            <p id="dialog-message">!!!DEIN TEXT!!!</p>
+        </div>
+
+    </div>
+
+    <h1>Mein Text</h1>
+    <button>1. Dialog Öffnen</button>
+
+</body>
+
+</html>

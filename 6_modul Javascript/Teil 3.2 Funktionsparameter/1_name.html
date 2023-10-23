@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 100px 50px;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Funktionsparameter</h1>
+    <p>→ Öffne die "Console"</p>
+
+    <p>
+        1) Wenn du auf den ersten Button klickst, wird <b>in der Console</b> der Text "Hallo Osama" angezeigt. Gucke dir
+        die
+        Funktion genau an.
+        <br><br> 1.1. Ändere den <b>Funktionsparameter</b> so ab, dass auf der Console <b>Hans</b> gegrüßt wird.
+        <br> 1.2. Beschreibe genau, was die Funktion <code>greet(name)</code> macht.
+    </p>
+    <button onclick="greet('Hans')">Grüße senden</button>
+
+
+    <script>
+
+        /**
+         * Aufgabe 1 
+         */
+        function greet(name) {
+            console.log(`Hallo ${name}`);
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+<!--  
+    ---- ORIGINAL AUFGABE -----
+
+
+function greet(name) {
+   console.log(`Hallo ${name}`);
+}
+
+    <p>
+        1) Wenn du auf den ersten Button klickst, wird in der Console der Text "Hallo Claudia" angezeigt. Gucke dir die Funktion genau an.
+        <br><br> 1.1. Ändere den <b>Funktionsparameter</b> so ab, dass auf der Console <b>Hans</b> gegrüßt wird.
+        <br> 1.2. Beschreibe genau, was die Funktion <code>greet(name)</code> macht.
+    </p>
+
+    <button onclick="greet('Claudia')">Grüße senden</button>
+
+
+-->

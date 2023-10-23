@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dialog-bg {
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dialog {
+            height: 50vh;
+            width: 50vw;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 24px;
+        }
+
+        .d-none {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<script>
+    function openDialog() {
+        document.getElementById('dialogID').classList.remove('d-none');
+    }
+
+    function closeDialog_OK() {
+        document.getElementById('dialogID').classList.add('d-none');
+    }
+
+    function closeDialog_Background() {
+        document.getElementById('dialogID').classList.add('d-none');
+    }
+
+</script>
+
+<body>
+    <div id="dialogID" class="dialog-bg d-none" onclick="closeDialog_Background()">
+        <!-- sobald "d-none" Klasse weg ist (remove), erscheint popup Fenster-->
+        <!-- Zeile 56 enthält auch onclick function, sobald hintergrund klickst...
+              wird funktion ausgeführt: "d-none" klasse hinzugefügt = popup verschwindet-->
+
+        <div class="dialog">
+            <h1>Dialog</h1>
+            <p id="dialog-message">!!!DEIN TEXT!!!</p> 
+
+            <button onclick="closeDialog_OK()">OK</button>
+        </div>
+
+    </div>
+
+    <h1>Mein Text</h1>
+    <button onclick="openDialog()">1. Dialog Öffnen</button>
+    <button onclick="openDialog()">2. Dialog Öffnen</button>
+
+</body>
+
+</html>

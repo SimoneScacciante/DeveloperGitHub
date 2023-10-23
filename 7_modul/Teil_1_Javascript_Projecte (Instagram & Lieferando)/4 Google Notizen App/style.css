@@ -1,0 +1,39 @@
+.main-box {
+    width: 400px;
+    height: 550px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.main-box-content {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.CSS-content1 {
+    padding-top: 25px;
+}
+
+.CSS-content2 {
+    padding-top: 10px;
+}
+
+.notic-zeile {
+    padding-top: 10px;
+}
+
+.löschen-button {
+    padding-top: 10px;
+}
+
+.container-messagebox {
+    width: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 115px;
+    padding-top: 10px;
+}

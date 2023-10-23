@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="render()">
+
+    <ul id="mylist"> </ul>
+
+
+<script>
+        let fruitsArray = ['Apple', 'Banana', 'Ananas'];
+
+        function render() {
+            let mylist = document.getElementById('mylist');
+            mylist.innerHTML = '';
+
+            for (let i = 0; i < fruitsArray.length; i++) {
+                const früchteVAR = fruitsArray[i];
+                mylist.innerHTML += generateListItem(i);
+            }
+        }
+
+        function generateListItem(ZahlenWert) {
+            let früchteVAR = fruitsArray [ZahlenWert];
+            return `<li> ${früchteVAR} </li>`;
+        }
+    </script>
+</body>
+
+</html>

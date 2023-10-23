@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .card {
+        height: 30px;
+    }
+
+</style>
+
+</head>
+
+<body onload="show()">
+
+
+    <div id="content"> 
+
+    </div>
+
+
+    <script>
+
+        let posts = [
+            {
+                'author': 'Tagesschau_1',
+                'image': './img/1contant.jpg',
+                'description': 'Das ist groß',
+                'location': '',
+            },
+    
+            {
+                'author': 'Hart aber Fair_2',
+                'image': './img/2contant.jpg',
+                'description': 'Das ist größer',
+                'location': 'London',
+            },
+
+            {
+                'author': 'Simone Zitrone_3',
+                'image': './img/3contant.jpg',
+                'description': 'Das ist am größten',
+                'location': 'London',
+            }
+
+        ];
+
+            let content = document.getElementById('content');
+
+            function show() {
+                content.innerHTML = '';
+
+                for (let i = 0; i < posts.length; i++) {
+                    const post = posts[i];
+
+                    content.innerHTML += `
+                    <div>
+                        <img src="${post['image']}"  class="card">
+                        <div> ${post['author']} </div>
+                        <div> ${post['description']} </div>
+
+                    </div>
+                    `;
+
+
+                }
+
+
+            }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

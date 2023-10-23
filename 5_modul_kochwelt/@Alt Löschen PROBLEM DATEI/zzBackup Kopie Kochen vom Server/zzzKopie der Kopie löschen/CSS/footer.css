@@ -1,0 +1,70 @@
+.main-footer{
+    background-color: var(--foorer-background);
+    font-family: var(--page-fonts-family);
+    color: var(--bg1-background);
+    height: 200px;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.main-container{
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px; 
+}
+
+.footer-main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+   .footer-main-content a {
+    color:var(--bg1-background);
+    text-decoration: none; 
+    border: 3px solid transparent;   
+}
+
+   .footer-main-content a:hover {
+    color:var(--bg1-background);
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+
+.kochweltlogo {
+    object-fit: contain;
+    height: 100px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-social-media{
+    color: var(--bg1-background);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 35px;  
+}
+
+.footer-social-media img {
+    width: 48px;
+    height: 48px;
+}
+.footer-social-media img:hover {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(99%) saturate(1878%) hue-rotate(95deg) brightness(96%) contrast(105%);  
+}
+
+.p-tag-sizing-2{
+    font-size: 14px;
+}
+
+.p-tag-sizing-2 a {
+    color:var(--bg1-background);
+    text-decoration: none; 
+    border: 1px solid transparent;
+}
+.p-tag-sizing-2 a:hover {
+    color:var(--bg1-background);
+    text-decoration: none;
+    background-color: var(--main-btn-color);
+    border: 1px solid transparent; 
+}

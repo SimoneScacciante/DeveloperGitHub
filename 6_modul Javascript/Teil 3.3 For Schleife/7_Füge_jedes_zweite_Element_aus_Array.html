@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px 200px;
+        }
+
+        p {
+            margin-top: 64px;
+        }
+    </style>
+
+    <script>
+
+        let fruits = ['Apple', 'Banana', 'Strawberry', 'Blackberry', 'Raspberry'];
+
+
+        function exercise7() {
+            for (let i = 0; i < 5; i+=2) {
+                document.getElementById('list7').innerHTML += `<li>${fruits[i]}</li>`
+
+            }
+        }
+
+
+    </script>
+</head>
+
+<body onload="exercise7()">
+
+
+    <p>7) Füge jedes zweite Element aus dem Array <code>fruits</code> in die Liste ein.</p>
+    <ul id="list7">
+
+    </ul>
+
+</body>
+
+</html>

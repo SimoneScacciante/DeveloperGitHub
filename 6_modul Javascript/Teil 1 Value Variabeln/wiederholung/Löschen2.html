@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <input id="apfel"> <button onclick="greetFromTextField()">Grüße </button>
+
+    <p id="greeting">
+    </p>
+
+    <script>
+        function greetFromTextField() {
+            let xmen = document.getElementById('apfel').value;
+            let baum = document.getElementById('apfel').value;
+
+            let kaka = document.getElementById('apfel').value;
+            let lachs = document.getElementById('apfel').value;
+
+            banana(xmen, baum);
+            erdbeere(kaka, lachs);
+        }
+
+        function banana(x, b) {
+            document.getElementById('greeting').innerHTML += `
+            Hallo ${x}, wie geht es dir?
+            <br>
+            Hallo ${b}, wie geht es dir?
+            <br>
+            `;
+        }
+
+        function erdbeere(k, l) {
+            document.getElementById('greeting').innerHTML += `
+            Bingo ${k}, wie geht es dir?
+            <br>
+            Bingo ${l}, wie geht es dir?
+            <br>
+            `;
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

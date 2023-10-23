@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------- Header section ----------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.header-logo {
+    width: 156px;
+    height: 50px;
+}
+
+.header-input {
+    width: 250px;
+    height: 32px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(25, 122, 248, 0.041);
+    outline: none;
+}
+
+.icon-logo {
+    height: 36px;
+    margin-left: 10px;
+}
+
+.profile {
+    border-radius: 50px;
+}
+
+.postcontainer {
+    padding-bottom: 24px;
+}
+
+/* -------------------- Post section --------------------- */
+
+.instapost {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 56px;
+}
+
+.post-header {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.post-logo {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.name-location {
+    padding-left: 8px;
+}
+
+.post-author {
+    font-weight: bold;
+}
+
+.post-location {
+    font-size: 14px;
+}
+
+.post-image {
+    width: 450px;
+    height: 600px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-like {
+    width: 26px;
+}
+
+.post-like:hover {
+    cursor: pointer;
+}
+
+.post-comment:hover {
+    cursor: pointer;
+}
+
+.post-message {
+    width: 26px;
+}
+
+.post-message:hover {
+    cursor: pointer;
+}
+
+.post-bookmark:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 14px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0;
+}
+
+.description {
+    display: flex;
+    align-items: flex-start;
+    width: 450px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+} 
+
+
+.description-author {
+    margin-block-start: 0;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-right: 4px;
+}
+
+.description-text {
+    margin-top: 4px;
+}
+
+.comment-input { border: 0;
+    width: 100%;
+    outline: none;
+    margin-top: 6px;
+}
+
+.description2 {
+    display: flex;
+    align-items: flex-start;
+    width: 450px;
+    margin-top: 4px;
+} 
+
+.comment-comment {
+    display: flex;
+    justify-content: center;
+}
+
+.post-button {
+    border: 0;
+    background-color: white;
+    color: blue;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.post-button:hover {
+    cursor: pointer;
+}
+
+.description3 {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-top: 4px;
+}
+
+.comment-flex {
+    display: flex;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        
+    }
+
+    .header-input {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-container {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .postcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-image {
+        width: 350px;
+        height: 500px;
+    }
+
+    .button-section {
+        width: 350px;
+    }
+
+    .comment-comment {
+        width: 350px;
+    }
+
+    .responsive-header {
+        width: 350px;
+    }
+
+    .description {
+        width: 350px
+    }
+
+    .description2 {
+        width: 350px
+    }
+}

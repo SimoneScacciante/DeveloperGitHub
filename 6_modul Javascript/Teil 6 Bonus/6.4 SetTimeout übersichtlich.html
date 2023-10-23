@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function greet() {
+
+            let name = document.getElementById('name').value;
+
+            changeGreeting('1. Hallo Wurst ', 0);
+            changeGreeting('2. Bonjur ', 2000);
+            changeGreeting('3. Hola ', 4000);
+            changeGreeting('4. Dawai ', 6000)
+        }
+
+        function changeGreeting(DerInhalt, DieZeit, name) {
+            setTimeout(function () {
+                document.getElementById('greeting').innerHTML = DerInhalt + name;
+            }, DieZeit);
+        }
+
+
+        //Achtung!! deine Variable -name- wird nicht ausgeführt, da diese nur innerhalb der Funtion greet definiert ist
+        // um diese auch in der nächsten Funktion -changeGreeting- zu definieren musste diese auch dort einestzten (Siehe nächste Aufgabe)
+    </script>
+</head>
+
+<body>
+    <h1>Gebe deinen Namen ein</h1>
+    <input id="name" type="text">
+    <button onclick="greet()">OK</button>
+    <h2 id="greeting">Hallo</h2>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .postStyle {
+            width: 200px;
+            height: 75px;
+            border: 1px solid lightgray;
+            padding: 8px;
+            margin-top: 32px;
+        }
+    </style>
+
+    <script>
+        let postsArray = [];  //Array einfügen
+
+        function addPost() {
+        let text = document.getElementById('message').value;
+         postsArray.push(text); //wichtig: Hier hast du "text" mit
+            // "for Schleife" und "Array" verknüpft damit sagst du..
+            //  jedes mal wenn "text" Eingabe.. mach neuen "postStyle" Chatbox
+
+         let myposts = document.getElementById('myposts');
+            myposts.innerHTML = '';
+            for(let i = 0; i < postsArray.length; i++) {
+
+            myposts.innerHTML += `
+            <div class="postStyle"> 
+                ${text}  
+            </div>
+            `; // Variable "text" also deine Eingabe erscheint in allen Chats gleich! 
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="message" placeholder="Neuer Post..."> 
+    <button onclick="addPost()">Posten</button>
+
+    <div id="myposts">
+    </div>
+
+</body>
+
+</html>

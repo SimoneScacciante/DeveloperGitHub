@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagramos</title>
+
+    <link rel="icon" href="./icon/start.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+
+    <script src="./11_instagram.js"> </script>
+    <link rel="stylesheet" type="text/css" href="./11_instagram.css">
+
+
+
+</head>
+
+<body onload="render()">
+    <!-- /* ================== NAV-LEFT ============= */  -->
+    <div class="placeholder">
+        <div class="navLeftBar">
+            <div class="navLogo">
+                <img class="navLogoLargeImg" src="./icon/logo.png" id="largeLogoID">
+                <img class="navLogoSmallImg" src="./icon/logoSmall.ico" id="smallLogoID">
+            </div>
+            <nav>
+                <div class="navBtns">
+                    <img class="navIcon" src="./icon/homeNav.ico" alt="Startseite">
+                    <span class="navFont screenreaderOnly"> Startseite </span>
+                </div>
+                <div class="navBtns">
+                    <img class="navIcon" src="./icon/searchNav.ico">
+                    <span class="navFont screenreaderOnly"> Suche </span>
+                </div>
+                <div class="navBtns">
+                    <img class="navIcon" src="./icon/discoverNav.ico">
+                    <span class="navFont screenreaderOnly"> Entdecken </span>
+                </div>
+                <div class="navBtns">
+                    <img class="navIcon" src="./icon/reelsNav.ico">
+                    <span class="navFont screenreaderOnly"> Reels </span>
+                </div>
+                <div class="navBtns">
+                    <img class="navIcon" src="./icon/shareBtns.ico">
+                    <span class="navFont screenreaderOnly"> Nachrichten </span>
+                </div>
+                <div class="navBtns">
+                    <img class="navIcon" src="./icon/heartBtns1.ico">
+                    <span class="navFont screenreaderOnly"> Benachrichtigung </span>
+                </div>
+                <div class="navBtns">
+                    <img class="navIcon" src="./icon/createNav.ico">
+                    <span class="navFont screenreaderOnly"> Erstellen </span>
+                </div>
+                <div class="navBtns">
+                    <img class="navIcon navProfile" src="./img/mainUser.jpg">
+                    <span class="navFont screenreaderOnly"> Profil </span>
+                </div>
+                <div class="navBtns moreNav">
+                    <img class="navIcon" src="./icon/moreNav.ico">
+                    <span class="navFont screenreaderOnly"> Mehr </span>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- /* ================== Layout-(Middle "story + Content" UND Right Bar) ============= */  -->
+
+    <div class="layoutContainer">
+        <!-- /* ================== Middle (Story + Content)   ============= */  -->
+
+        <div class="middleLayoutContainer">
+            <div class="headerSmallScreenContainer" id="SmallScreenID">
+                <div class="SmallScreenHeader">
+                    <div class="logoTextTop">
+                        <img class="SmallScreenLogo" src="./icon/logo.png" alt="Logo">
+                    </div>
+                    <div class="SmallScreenSearchbar"><input type="text" placeholder="SUCHEN"></div>
+                    <div>
+                        <img class="contentHeartIcon" src="./icon/heartBtns1.ico">
+                    </div>
+                </div>
+                <hr>
+                <br>
+            </div>
+            <div class="storyContainer">
+                <div class="storyUserStyle" id="storyDisplayNone">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/1story.jpg">
+                    </div>
+                    <span class="storyFont">Azura</span>
+                </div>
+                <div class="storyUserStyle">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/2story.jpg">
+                    </div>
+                    <span class="storyFont">Elara</span>
+                </div>
+                <div class="storyUserStyle">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/3story.jpg">
+                    </div>
+                    <span class="storyFont">Gaius</span>
+                </div>
+                <div class="storyUserStyle">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/4story.jpg">
+                    </div>
+                    <span class="storyFont">DKairo</span>
+                </div>
+                <div class="storyUserStyle">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/5story.jpg">
+                    </div>
+                    <span class="storyFont">Saphira</span>
+                </div>
+                <div class="storyUserStyle">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/6story.jpg">
+                    </div>
+                    <span class="storyFont">Isolde</span>
+                </div>
+                <div class="storyUserStyle">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/7story.jpg">
+                    </div>
+                    <span class="storyFont">Thalassa</span>
+                </div>
+                <div class="storyUserStyle" id="storyDisplayNone">
+                    <div class="storyBackgroundColorStyle">
+                        <img class="storyImg" src="./img/story/8story.jpg">
+                    </div>
+                    <span class="storyFont">Zephyr</span>
+                </div>
+            </div>
+
+            <!-- /* ======= Content Container) ============= */  -->
+            <div class="contentContainerSize">
+                <div id="content">
+                </div>
+            </div>
+        </div>
+
+        <!-- /* ========== Sugg-Right-Bar  ======== */  -->
+        <div class="suggRightBar">
+            <div class="suggUserStyle">
+                <div class="suggProfile">
+                    <img class="suggImg" src="./img/mainUser.jpg"">
+                    <div class=" suggFontContainer">
+                    <p class="suggNickFont"> SimonSkyWalker </p>
+                    <p class="suggUserFont"> Simone Zitrone </p>
+                </div>
+            </div>
+            <div>
+                <span class="suggChangeFollowFont">Wechseln</span>
+            </div>
+        </div>
+        <div class="suggForYou">
+            <span class="suggForYouFont"> Vorschläge für dich </span>
+            <span> Alle ansehen </span>
+        </div>
+        <div class="suggUserStyle">
+            <div class="suggProfile">
+                <img class="suggImg" src="./img/sugg/1suggUser.jpg">
+                <div class=" suggFontContainer">
+                    <p class="suggNickFont"> ByteBuddha_95 </p>
+                    <p class="suggUserFont"> Folgt dir </p>
+                </div>
+            </div>
+            <div>
+                <span class="suggChangeFollowFont">Folgen</span>
+            </div>
+        </div>
+        <div class="suggUserStyle">
+            <div class="suggProfile">
+                <img class="suggImg" src="./img/sugg/2suggUser.jpg">
+                <div class=" suggFontContainer">
+                    <p class="suggNickFont"> SyntaxSorcerer_90 </p>
+                    <p class="suggUserFont"> Folgt dir </p>
+                </div>
+            </div>
+            <div>
+                <span class="suggChangeFollowFont">Folgen</span>
+            </div>
+        </div>
+        <div class="suggUserStyle">
+            <div class="suggProfile">
+                <img class="suggImg" src="./img/sugg/3suggUser.jpg">
+                <div class=" suggFontContainer">
+                    <p class="suggNickFont"> BitWitExplorer_83 </p>
+                    <p class="suggUserFont"> Folg dir </p>
+                </div>
+            </div>
+            <div>
+                <span class="suggChangeFollowFont">Folgen</span>
+            </div>
+        </div>
+        <div class="suggUserStyle">
+            <div class="suggProfile">
+                <img class="suggImg" src="./img/sugg/4suggUser.jpg">
+                <div class=" suggFontContainer">
+                    <p class="suggNickFont"> DebuggingDynamo_77 </p>
+                    <p class="suggUserFont"> Folgt dir </p>
+                </div>
+            </div>
+            <div>
+                <span class="suggChangeFollowFont">Folgen</span>
+            </div>
+        </div>
+
+        <div class="suggUserStyle">
+            <div class="suggProfile">
+                <img class="suggImg" src="./img/sugg/5suggUser.jpg">
+                <div class=" suggFontContainer">
+                    <p class="suggNickFont"> CtrlAltDefeat_XX </p>
+                    <p class="suggUserFont"> Folgt dir</p>
+                </div>
+            </div>
+            <div>
+                <span class="suggChangeFollowFont">Folgen</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

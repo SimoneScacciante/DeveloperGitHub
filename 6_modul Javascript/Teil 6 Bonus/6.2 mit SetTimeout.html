@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function greet() {
+
+            let name = document.getElementById('name').value;
+
+            document.getElementById('greeting').innerHTML = '1. Hallo Deutschland! mein Name ist ' + name;
+
+            setTimeout(function () {
+                document.getElementById('greeting').innerHTML = '2. Hello England! my name is ' + name;
+            }, 3000);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Gebe deinen Namen ein</h1>
+    <input id="name" type="text">
+    <button onclick="greet()">OK</button>
+    <h2 id="greeting">Hallo</h2>
+</body>
+
+</html>

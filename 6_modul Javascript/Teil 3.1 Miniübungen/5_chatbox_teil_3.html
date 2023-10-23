@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+
+        .ChatBoxStyle { /* Dieser CSS Klasse keine Funktion zugeteilt!*/
+            margin-bottom: 20px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<script>
+
+    function sendMessage() {
+        name = document.getElementById('name').value;
+        text = document.getElementById('text').value;
+
+
+        if (name.length > 0 && text.length > 0) { //Alternativ schreib "name != '' && text != ''"
+
+            document.getElementById('MyText').innerHTML = `<b> ${name}</b>: <i>${text}</i>`
+
+            document.getElementById('name').value = ``;
+            document.getElementById('text').value = ``;
+
+        } else {
+            alert('Bitte Eingabe machen!')
+
+            document.getElementById('name').value = ``;
+            document.getElementById('text').value = ``;
+        }
+    }
+
+</script>
+
+<body>
+
+    <h1>Miniübungen</h1>
+    <h2>Aufgabe 5</h2>
+
+    <input id="name" type="text" placeholder="Namen eingeben">
+    <input id="text" type="text" placeholder="Nachricht eingeben">
+
+    <button onclick="sendMessage()">Senden</button>
+
+    <div id="MyText"> </div>
+
+</body>
+
+</html>

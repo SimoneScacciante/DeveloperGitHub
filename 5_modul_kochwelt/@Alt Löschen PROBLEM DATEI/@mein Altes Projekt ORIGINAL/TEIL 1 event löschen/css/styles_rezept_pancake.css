@@ -1,0 +1,157 @@
+
+
+.margin-h2 {
+    margin-bottom: 10px;
+
+}
+
+h4 {
+    margin: 50px 0px 0px 0px;
+}
+
+.recipe-header-pancake {
+    margin: 0px 200px 0 200px;
+    height: 225px;
+}
+
+
+.pancakes-img-rezept {
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px 1px rgb(0 0 0 / 20%);
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid var(--foorer-background)
+}
+
+.icons-container {
+    margin: 0px 1150px 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+
+.icons-box {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: var(--bg2-background);
+    /* background-color: #ECECEC;*/
+}
+
+
+.icons-img {
+    width: 30px;
+}
+
+
+input {
+    width: 120px;
+    height: 31px;
+    border: 1px solid #efefef;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.button_portion {
+    background-color: #3B9047;
+    padding: 9px 30px 9px 30px;
+    color: white;
+    border: none;
+    transition: all 125ms ease-in-out;
+    border-radius: 0 10px 10px 0;
+    height: 30px;
+    width: 120px;
+}
+
+.ingrediens-counter {
+    margin: 0px 0px 20px 200px;
+}
+
+
+
+
+
+
+
+
+
+.ingrediens-table {
+    margin: 0px 200px 0 200px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td {
+    padding: 13px;
+}
+
+.table td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100px;
+    padding-left: 20px;
+}
+
+.table td:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.table tr:nth-child(2n+1) {
+    background-color: var(--bg2-background);
+}
+
+
+
+
+
+
+.preparation-container {
+    margin: 0px 200px 50px 200px;
+}
+
+.preparation-time {
+    display: flex;
+    column-gap: 50px;
+}
+
+.icons-box-preparation {
+    display: flex;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: var(--bg2-background);
+    margin-bottom: 15px;
+    /* background-color: #ECECEC;*/
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.preparation-user {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    height: 120px;
+}
+
+.user-img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 15px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    <input id="namefield">
+    <button onclick="greetFromTextField()">Grüße</button>
+
+    <p id="greeting">
+    </p>
+
+    <script>
+
+        function greetFromTextField() {
+            let name = document.getElementById('namefield').value
+            greet(name);
+        }
+
+        function greet(x) {
+            document.getElementById('greeting').innerHTML =
+                `Hallo ${x}, wie geht es dir mein Schweinchen? 
+            <div> <img class="pig" src="img/harry.png"> </div>`;
+        }
+    </script>
+
+    <style>
+        .pig {
+            width: 100px;
+            border-radius: 40px;
+        }
+    </style>
+</body>
+
+</html>

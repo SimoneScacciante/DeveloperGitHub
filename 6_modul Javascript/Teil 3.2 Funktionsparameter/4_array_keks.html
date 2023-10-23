@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 100px 50px;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Funktionsparameter</h1>
+    <p>→ Öffne die "Console"</p>
+
+
+
+    <p>
+        4) In diesem Code existiert ein Array mit diversen Leckereien. <br>
+        <br> 4.1. Ändere der Funktionsparameter der Funktion <code>eatCookie()</code> so ab, dass aus dem Array der Keks
+        ausgewählt und gegessen wird. Aus der Console sollte <code>Cookie: Om nom nom</code> angezeigt werden.
+        <br><br>
+
+
+    </p>
+    <button onclick="eatCookie(2)">Keks essen</button>
+
+    <script>
+
+        let food = ['Apple', 'Spinach', 'Cookie', 'Pumpkin'];
+
+        function eatCookie(i) {
+            let item = food[i]; // "Siehe unten Alternativ Code
+            if (item == 'Cookie') {
+                console.log('Om nom nom');
+            } else {
+                console.log('I don\'t like ' + item);
+            }
+        }
+
+
+        /*
+         Alternativ code:,  "du kannst auch nur "food[i]" definieren ohne extra variable "item", führt zum gleichen Ergebnis
+ 
+         function eatCookie(i) {
+             food[i]; // du kannst auch nur "food[i]" definieren ohne extra variable "item", führt zum gleichen Ergebnis
+             if (food[i] == 'Cookie') {
+                 console.log('Om nom nom');
+             } else {
+                 console.log('I don\'t like ' + item);
+             }
+         }
+        */
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+---- ORIGINAL AUFGABE -----
+
+
+
+                let food = ['Apple', 'Spinach', 'Cookie', 'Pumpkin'];
+
+    <p>
+        4) In diesem Code existiert ein Array mit diversen Leckereien. <br>
+        <br> 4.1. Ändere der Funktionsparameter der Funktion <code>eatCookie()</code> so ab, dass aus dem Array der Keks ausgewählt und gegessen wird. Aus der Console sollte <code>Cookie: Om nom nom</code> angezeigt werden.
+        <br><br>
+
+    </p>
+    <button onclick="eatCookie(1)">Keks essen</button>
+
+
+    
+
+        function eatCookie(i) {
+            let item = food[i]; // Lädt das Element an der Stelle "i" aus dem Array
+            if (item == 'Cookie') {
+                console.log('Om nom nom');
+            } else {
+                console.log('I don\'t like ' + item);
+            }
+        }
+
+
+    -->

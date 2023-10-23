@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+    </style>
+
+    <script>
+
+        let SimonListe = ['1_Einkaufen', '2_Putzen', '3_Kochen', '4_Spazieren']
+
+        function showTodos() {
+            document.getElementById('mylist').innerHTML  = ``;
+
+            for (let i = 0; i < SimonListe.length; i++) 
+            {
+                document.getElementById('mylist').innerHTML += 
+                `<li>${SimonListe[i]}<a href="# "onclick="DeleteSimonListe(${i})" </a>X</li>`;
+            }
+        }
+
+        function addTodo() {
+            let TextEingabe = document.getElementById('input').value;
+            SimonListe.push(TextEingabe);  
+            showTodos();
+
+            document.getElementById('input').value = ``
+        }
+
+        function DeleteSimonListe (position) {
+            SimonListe.splice(position, 1);
+            showTodos();
+        }
+
+    </script>
+
+</head>
+
+<body onload="showTodos()">
+
+    <ul id="mylist">
+    </ul>
+
+    <input id="input"><button onclick="addTodo()">Hinzufügen</button>
+
+
+</body>
+
+</html>

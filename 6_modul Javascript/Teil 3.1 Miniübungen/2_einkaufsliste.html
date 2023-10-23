@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 50px 50px;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Miniübungen</h1>
+    <h2>Aufgabe 2</h2>
+
+    <p>
+        2. Die verschiedenen Buttons fügen dem Container mit der ID <code>food</code> verschiedene Früchte hinzu.
+        <br>
+        <br> <br>2.1. Füge einen weiteren Button "Drachenfrucht" hinzu, der diese Frucht ebenfalls zu unserer Liste
+        hinzufügt.
+        <br> <br>2.2. Der Button <b>Alles löschen</b> ruft die Funktion <code>deleteFruits()</code> auf. Was macht diese
+        Funktion? Wie funktioniert sie?
+        <br> <br>2.3. Erkläre den Unterschied von <code>=</code> und <code>+=</code>
+        <br> <br>2.4. Stelle die Früchte in der Liste fett dar. Bearbeite die Funktion <code>addFruit(fruit)</code> so, dass
+        jede Frucht in dem generierten HTML Code mit einem <code>&lt;b&gt;&lt;/b&gt;</code> umgeben ist. <br> <br>
+    </p>
+
+    <div>
+        <button onclick="addFruit('Apfel')">Apfel</button>
+        <button onclick="addFruit('Banane')">Banane</button>
+        <button onclick="addFruit('Clementine')">Clementine</button>
+        <button onclick="addFruit('Drachenfrucht')">Drachenfrucht</button>
+    </div>
+
+    <div>
+        <button onclick="deleteFruits()">Alles löschen</button>
+    </div>
+
+    <div id="food"></div>
+
+    <script>
+
+        /**
+         * Aufgabe 2 
+         
+         Notiz Simon:
+            Diese Funktion: <button onclick="addFruit('Apfel')">Apfel</button>
+            beduetet also....  addfruit('Apfel') = addFruit(fruit)
+            somit ist Apfel = fruit, deshalb erscheint automatisch Apfel als End Text
+
+            die kombination von "+=" bedeutet dazu addieren 
+         * 
+         */
+        function addFruit(fruit) {
+            document.getElementById('food').innerHTML += `Frucht hinzugefügt: <b>${fruit}</b> <br>`;
+        }
+        /**Notiz Simon:
+        Die "delteFruits" führt dazu das was auch immer innerhlab von tag 'food' ((<div id="food"></div>))
+        mit leeren '' ersetzt wird, in diesem Fall wird kompletter div Container geleert = rausgelöscht
+        */
+        function deleteFruits() {
+            document.getElementById('food').innerHTML = '';
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

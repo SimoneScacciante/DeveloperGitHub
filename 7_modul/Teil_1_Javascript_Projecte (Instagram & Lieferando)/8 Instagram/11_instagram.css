@@ -1,0 +1,584 @@
+
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.layoutContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+/* ============= CONTENT ============= */
+
+.contentContainerSize {
+    width: calc(600px * 0.8);
+    font-size: 14px;
+}
+
+.contentProfileImg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.contentHeaderContainer {
+    display: flex;
+    padding-bottom: 14px;
+    justify-content: space-between;
+}
+
+.contentHeaderLeft {
+    display: flex;
+}
+
+.contentUserNickFont {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contentUserLocationFont {
+    font-size: 12px;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.contentUserLocation {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.contentImg {
+    height: calc(600px * 1);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contentBtns1 {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    justify-content: space-between;
+}
+
+.contentBtnsRight {
+    padding-left: 175px;
+}
+
+.contentIcon {
+    height: 28px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.contentHeartIcon {
+    height: 32px;
+}
+
+.contentHeartIcon:hover {
+    cursor: pointer;
+}
+
+.contentIconBookmark {
+    padding-left: 85px;
+    height: 28px;
+}
+
+.likefont {
+    font-weight: bold;
+}
+
+.contentDescriptionContainer {
+    display: flex;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.contentDescription {
+    padding-left: 35px;
+}
+
+.contentCommentStyle {
+    padding-left: 50px;
+}
+
+.contentInputContainer {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.contentInputContainer input {
+    outline: none;
+    width: 100%;
+}
+
+.contantInputSmilieContainer {
+    display: flex;
+    column-gap: 5px;
+}
+
+.contentSmileyIcon {
+    height: 18px;
+    padding-top: 4px;
+}
+
+.contentInputAdd {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #129AF7;
+    Cursor: pointer;
+}
+
+input {
+    border: 0;
+}
+
+/* =========== NAV-Bar-LEFT ======== */
+
+.placeholder {
+    width: 340px;
+}
+
+.navLeftBar {
+    width: 225px;
+    padding: 35px 0px 0px 25px;
+    border-right: 1px solid #DBDBDB;
+    position: fixed;
+    height: 100vh;
+}
+
+.navBtns {
+    display: flex;
+    padding: 15px;
+}
+
+.navFont {
+    font-size: 17px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.navLogo {
+    padding-bottom: 35px;
+}
+
+.navLogoLargeImg {
+    height: 25px;
+}
+
+.navProfile {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.navIcon {
+    height: 25px;
+    cursor: pointer;
+}
+
+.moreNav {
+    position: absolute;
+    bottom: 65px;
+}
+
+/* = MIDDLE-Layout (Story + Contant) = */
+
+.middleLayoutContainer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storyContainer {
+    display: flex;
+    padding-bottom: 65px;
+    justify-content: space-evenly;
+    column-gap: 25px;
+}
+
+.storyUserStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.storyBackgroundColorStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+
+    background-image: 
+    linear-gradient(45deg, 
+    rgba(255, 197, 2, 1) 
+    0%, rgba(255, 32, 78, 1) 
+    47%, rgba(210, 0, 196, 1) 
+    100%)
+}
+
+.storyImg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 55px;
+    height: 55px;
+    border: 2px solid white;
+}
+
+.storyFont {
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+/* = Sugg-Bar-Right (Suggestion Bar) == */
+
+.suggRightBar {
+    width: 300px;
+    padding-top: 35px;
+    padding-left: 80px;
+}
+
+.suggImg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.suggUserStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.suggProfile {
+    display: flex;
+    align-items: center;
+}
+
+.suggFontContainer {
+    padding-left: 12px;
+}
+
+.suggChangeFollowFont {
+    font-size: 12px;
+    cursor: pointer;
+    color: #21A3F7;
+}
+
+.suggChangeFollowFont:hover {
+    color: #0D5AE7;
+}
+
+.suggNickFont {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.suggUserFont {
+    font-size: 12px;
+    color: #C1C1C1;
+
+}
+
+.suggForYou {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    padding-top: 27px;
+    padding-bottom: 14px;
+}
+
+.suggForYouFont {
+    font-size: 14px;
+    color: #7B7B7B;
+    cursor: pointer;
+}
+
+/* == RESPONSIVE:  #SmallScreenID wird
+    erst bei "max-width: 850px" angezeigt  = */
+
+.SmallScreenHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3vw;
+}
+
+.SmallScreenSearchbar {
+    color: #7B7B7B;
+    display: flex;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    margin: 0 16px;
+}
+
+.SmallScreenSearchbar input {
+    font-size: 3vw;
+    padding: 8px;
+}
+
+input[type="search"] {
+    color: #7B7B7B;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    height: 32px;
+}
+
+input[type="search"]::placeholder {
+    color: #7B7B7B;
+}
+
+.SmallScreenLogo {
+    height: 6vw;
+}
+
+/* ========== RESPONSIVE  ========== */
+
+@media (max-width: 5000px) {
+    #smallLogoID {
+        display: none;
+        /* Zeigen kleine Logo an */
+    }
+
+    #SmallScreenID {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    .suggRightBar {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .placeholder {
+        width: 103px;
+    }
+
+    .navLeftBar {
+        width: 80px;
+    }
+
+    .navLeftBar span {
+        display: none;
+    }
+
+
+    .navLogoSmallImg {
+        height: 45px;
+    }
+
+    .navLogo {
+        padding-left: 10px;
+    }
+
+    #largeLogoID {
+        display: none;
+    }
+
+    #smallLogoID {
+        display: inline;
+        /* Zeige das kleine Logo an */
+    }
+
+}
+
+
+@media (max-width: 850px) {
+    .headerSmallScreenLayout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .placeholder {
+        display: none;
+    }
+
+    .navLeftBar {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+    #SmallScreenID {
+        display: inline;
+    /* kleines Suchfeld = angezeigt */
+    }
+
+    #storyDisplayNone {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .contentContainerSize {
+        width: 100%;
+    }
+
+    .storyContainer {
+        column-gap: 10px;
+    }
+
+    .contentHeaderContainer {
+        padding-left: 10px;
+    }
+
+    .logoSmalScreeen {
+        height: 20px;
+    }
+
+    .searchbar input {
+        font-size: 17px;
+    }
+
+    .contentCommentsContainer {
+        padding-left: 10px;
+    }
+
+    .contentBtnsLeft {
+        padding-left: 10px;
+    }
+
+
+    .middleLayoutContainer{
+        width: 100%;
+    }
+
+    .contentImg {
+        height: auto;
+        height: initial;
+    }
+
+    .contentBtnsRight {
+        padding-left: auto;
+        padding-left: initial;
+    }
+
+    .contentInputContainer {
+        padding-right: 3px;
+    }
+
+    .contentContainerSize {
+        font-size: 2.8vw;
+    }
+
+    .contentHeartIcon {
+        height: 6vw;
+    }
+
+    .contentIcon {
+        height: 5vw;
+    }
+
+    .contentIconBookmark {
+        height: 5vw;
+    }
+
+    .contentInputContainer input {
+        font-size: 3vw;
+    }
+
+    .contentInputAdd {
+        font-size: 3vw;
+    }
+
+    .contentSmileyIcon {
+        height: 3vw;
+    }
+
+    .contentUserNickFont {
+        font-size: 3vw;
+    }
+
+    .contentUserLocationFont {
+        font-size: 3vw;
+    }
+
+    .contentProfileImg {
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .contentHeaderLeft {
+        align-items: center;
+    }
+
+    .contentUserLocation {
+        padding-left: 2vw;
+    }
+
+
+    .storyContainer {
+        column-gap: 1vw;
+        padding-bottom: 12vw;
+    }
+
+    .storyBackgroundColorStyle {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .storyFont {
+        font-size: 2vw;
+    }
+
+    .storyImg {
+        width: 11vw;
+        height: 11vw;
+    }
+
+
+    .searchbar input {
+        font-size: 1vw;
+    }
+
+    .logoSmallScreen {
+        height: 5vw;
+    }
+
+    .headerSmallScreen {
+        padding-bottom: 1vw;
+    }
+
+}

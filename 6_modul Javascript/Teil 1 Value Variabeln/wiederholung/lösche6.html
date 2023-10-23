@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input><button onclick="SimoneTextField()"> Enter</button>
+    <input><button onclick="SimoneTextField2()"> Enter</button>
+
+    <div class="style"> 
+    <p id="TextHier1">
+
+    </p>
+
+    <p id="TextHier2">
+       
+    </p>
+</div>
+    <script>
+
+        function SimoneTextField() {
+            let x = 'kleiner';
+            document.getElementById('TextHier1').innerHTML += 
+            `Hey mein ${x} Pimmel
+            <br>
+            `;
+        }
+
+
+
+
+        function SimoneTextField2() {
+            let x = 'lutscher';
+            birne(x);
+        }
+
+        function birne(x) {
+            document.getElementById('TextHier2').innerHTML += 
+            `Hey mein ${x} Pimmel
+            <br>
+            `;
+        }
+
+
+
+    </script>
+
+    
+<style>
+    .style {
+        display: flex;
+    }
+
+</style>
+
+
+</body>
+
+</html>
+
+
+
+
+function TextFieldButton() {
+    let x = document.getElementById('namefield').value;
+    birne(x);
+}
+
+function birne(x) {
+    document.getElementById('Text').innerHTML += `was geht ${x}`
+
+}

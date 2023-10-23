@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 100px 50px;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Funktionsparameter</h1>
+    <p>→ Öffne die "Console"</p>
+
+
+    <p>
+        3) Die Funktion <code>contactInfo()</code> ruft die Funktion <code>showMyAge()</code> auf. Diese zeigt jedoch
+        nicht das Alter an, sondern nur den Fehler <code>Uncaught ReferenceError: age is not defined</code>. Finde und
+        behebe den Fehler.
+    </p>
+    <button onclick="contactInfo('Hans', '26')">Name und Alter anzeigen</button>
+
+
+    <script>
+
+        function contactInfo(name, age) {
+            console.log(`Mein Name ist ${name}`);
+
+            showMyAge(name, age);
+        }
+
+        function showMyAge(name, age) {
+            console.log(`Ich bin ${age} Jahre alt.`);
+        }
+
+
+        /* ALTERNATIV CODE 1:
+
+        function contactInfo(name, age) {
+            console.log(`Mein Name ist ${name}`);
+
+            showMyAge();
+        }
+
+        function showMyAge() {
+            let age = 26;
+            console.log(`Ich bin ${age} Jahre alt.`);
+        }
+*/
+
+        /* ALTERNATIV CODE 2:
+
+                function contactInfo(name, age) {
+                    console.log(`Mein Name ist ${name} !!UND!! ich bin ${age} Jahre alt.`);
+        
+                }
+        */
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- 
+---- ORIGINAL AUFGABE -----
+
+
+    <p>
+        3) Die Funktion <code>contactInfo()</code> ruft die Funktion <code>showMyAge()</code> auf. Diese zeigt jedoch nicht das Alter an, sondern nur den Fehler <code>Uncaught ReferenceError: age is not defined</code>. Finde und behebe den Fehler.
+    </p>
+    <button onclick="contactInfo('Claudia', 26)">Name und Alter anzeigen</button>
+
+
+        function showMyAge() {
+            console.log(`Ich bin ${age} Jahre alt.`);
+        }
+
+
+        function contactInfo(name, age) {
+            console.log(`Mein Name ist ${name}`);
+
+            showMyAge();
+        }
+
+
+
+
+    -->

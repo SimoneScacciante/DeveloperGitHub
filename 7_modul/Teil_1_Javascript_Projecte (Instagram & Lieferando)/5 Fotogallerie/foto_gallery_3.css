@@ -1,0 +1,57 @@
+
+
+.title {
+    font-family: 'Abel', sans-serif;
+    padding-right: 27px;
+}
+
+
+.head-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 28px;
+}
+
+
+.backspace {
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+
+}
+
+
+#photo-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+
+
+.imgbox {
+    display: flex;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.imgContainer {
+    height: 150px;
+    display: flex;
+}
+
+
+.imgbox:hover {
+    box-shadow: 10px 10px 5px #000000;
+    -moz-box-shadow: 0px 10px 5px #000000;
+    -webkit-box-shadow: 0px 10px 5px #000000;
+}
+
+
+.d-none {
+    display: none;
+}

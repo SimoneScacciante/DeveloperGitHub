@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 35%;
+            display: flex;
+        }
+    </style>
+
+    <script>
+        let images = ['z1.jpg', 'z2.jpg', 'z3.jpg', 'z4.jpg', 'z5.jpg', 'z6.jpg'];
+        let currentImage = 0;
+
+        function start (){
+            showImage(currentImage);     // 2.) i soll auf position 0 beginnen
+            currentImage++;              // 3.) füge der anfangsposition 0 immer beim durchlauf einen +1 hinzu
+            setTimeout(start, 500);      // 4.) ohne diese Zeile macht er nur ein durchlauf also nur Position 0 würde sich ergeben, das currentImage++ hätte keine wirkung, mit der Zeile erfolgt unendliche aufzählung  Werte Positionen in die höhe, aber ACHTUNG er zählt theoretisch unendlich hoch  bis alle Positionen erreicht sind aber hier nur bis z6.jpg also wert 5 ist etwas gegeben, das heißt es erscheint fehler meldung in console, er will immer höher zählen aber system erkennt das nach letzten Bild also Position 5 keine weitere positionen nicht vergeben sind
+        }
+
+
+        function showImage(i) { //1.) i ist meine funktion showimage also = showImage(i)
+            document.getElementById('image').src = images[i]; 
+        }
+
+    </script>
+
+</head>
+
+<body onload="start()">
+    <img id="image" src="">
+</body>
+
+</html>

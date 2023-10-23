@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="namefield"> <button onclick="TextFieldButton()">Enter</button>
+
+    <p id="Text">
+    </p>
+
+    <script>
+
+        function TextFieldButton (){
+            let x = document.getElementById('namefield').value;
+            birne (x)
+        }
+
+        function birne (x) {
+            document.getElementById('Text').innerHTML = `hier ist mein ${x} Text`
+        }
+
+    </script>
+
+
+</body>
+
+</html>

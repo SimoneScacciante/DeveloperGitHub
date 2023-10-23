@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .door {
+            width: 200px;
+            height: 150px;
+            background-color: yellow;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+        }
+    </style>
+
+<script>
+
+    let simon = ['1_schön', '2_stark', '3_hübsch', '4_groß', '5_smart', '6_gott']
+
+    function insertDoors() {
+        for (let i = 0; i < 6; i++) { 
+            document.getElementById('body').innerHTML += `<div class="door">${simon [i]}</div>`
+
+        }
+    }
+
+</script>
+
+</head>
+
+<body id="body" onload="insertDoors()">
+</body>
+
+</html>

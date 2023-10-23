@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+
+let menus = ['pizza', 'Salami'];
+        let prices = [1.99, 2.0];
+        let amounts = [1, 10];
+
+        function getValueFromInput(inputId) {
+            const inputValueID = document.getElementById(inputId);
+
+            return inputValueID.value
+        }
+
+        function getMenuFromInput() {
+            const menuValueID = getValueFromInput('menu');
+
+            return menuValueID.trim();
+        }
+
+        function getPriceFromInput() {
+            const priceValueID = getValueFromInput('price');
+
+            return parseFloat(priceValueID)
+
+        }
+
+
+        function onAddMenu() {
+            // Werte aus den Input-Feldern holen
+            const menuFunction = getMenuFromInput();
+            const priceFunction = getPriceFromInput();
+
+            // Werte ans Ende der Arrays hinzufügen
+            menus.push(menuFunction);
+            prices.push(priceFunction);
+            amounts.push(1);
+        }
+
+function getMenuIndex(menu) {
+  // Verwende indexOf, um den Index des Menüs im Array zu finden
+  // Wenn das Menü nicht gefunden wird, gibt indexOf -1 zurück
+  return menus.indexOf(menu);
+}
+
+
+
+</script>
+
+
+</body>
+</html>

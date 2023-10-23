@@ -1,0 +1,304 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+
+    <title>Sakura Restaurant - Japanische Spezialitäten </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <script>
+
+        function translation_german() {
+            document.getElementById('menu').innerHTML = `MENÜ`
+            document.getElementById('locations').innerHTML = `STANDORT`
+            document.getElementById('about').innerHTML = `ÜBER UNS`
+            document.getElementById('best').innerHTML = `DER BESTE RAMEN DER STADT`
+            document.getElementById('how').innerHTML = `SO BESTELLST DU`
+            document.getElementById('pick1').innerHTML = `<b>Nimm <br>Deine Nudeln</b>`
+            document.getElementById('pick2').innerHTML = `Nimm <br> Deine Brühe`
+            document.getElementById('pick3').innerHTML = `Füge <br> Deine Zutaten`
+            document.getElementById('our').innerHTML = `UNSER MENÜ`
+            document.getElementById('find').innerHTML = `HIER FINDEST DU UNS`
+            document.getElementById('chicken1').innerHTML = `HUHN`
+            document.getElementById('chicken2').innerHTML = `HUHN`
+            document.getElementById('chicken3').innerHTML = `HUHN`
+            document.getElementById('beef1').innerHTML = `RIND`
+            document.getElementById('beef2').innerHTML = `RIND`
+            document.getElementById('beef3').innerHTML = `RIND`
+            document.getElementById('shrimp1').innerHTML = `GARNELE `
+            document.getElementById('shrimp2').innerHTML = `GARNELE`
+            document.getElementById('shrimp3').innerHTML = ` GARNELE`
+        ;}
+
+        function translation_english() {
+            document.getElementById('menu').innerHTML = `MENU`
+            document.getElementById('locations').innerHTML = `LOCATIONS`
+            document.getElementById('about').innerHTML = `ABOUT US`
+            document.getElementById('best').innerHTML = `THE BEST RAMEN IN TOWN`
+            document.getElementById('how').innerHTML = `HOW TO ORDER`
+            document.getElementById('pick1').innerHTML = `Pick Your Noodle`
+            document.getElementById('pick2').innerHTML = `Pick Your Broth`
+            document.getElementById('pick3').innerHTML = `Add Your Toppings`
+            document.getElementById('our').innerHTML = `OUR MENU`
+            document.getElementById('find').innerHTML = `FIND US AT`
+            document.getElementById('chicken1').innerHTML = `CHICKEN`
+            document.getElementById('chicken2').innerHTML = `CHICKEN`
+            document.getElementById('chicken3').innerHTML = `CHICKEN`
+            document.getElementById('beef1').innerHTML = `BEEF`
+            document.getElementById('beef2').innerHTML = `BEEF `
+            document.getElementById('beef3').innerHTML = ` BEEF`
+            document.getElementById('shrimp1').innerHTML = `SHRIMP`
+            document.getElementById('shrimp2').innerHTML = `SHRIMP`
+            document.getElementById('shrimp3').innerHTM = `SHRIMP`
+        };
+
+
+    </script>
+
+    <div class="menu">
+        <div>
+            <img src="img/saku.png" class="header-flower">
+        </div>
+
+        <div class="link">
+            <a href="#our-menu-link" id="menu">MENU</a>
+            <a href="#find-us-at-link" id="locations">LOCATIONS</a>
+            <a href="#about-link" id="about">ABOUT</a>
+            <a class="phone" href="tel:+49(0)76 54564534"><img class="phone-img" src="img/phone.png">0176
+                54564536</a>
+        </div>
+
+
+
+        <div class="flags">
+            <button onclick="translation_german ()"> <img src="img/icon_germany.png"> </button>
+            <button onclick="translation_english ()"> <img src="img/icon_england.png"> </button>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="header">
+        <div class="main-headline">
+            <h1>Sakura Ramen</h1>
+        </div>
+
+        <span class="second-headline">
+            <h2 id="best">THE BEST RAMEN IN TOWN</h2>
+        </span>
+    </div>
+
+
+    <div class="how-to-order">
+        <h2 id="how">HOW TO ORDER</h2>
+    </div>
+
+
+    <div class="order-section">
+
+        <div>
+            <img src="img/bowl_icon.jpg">
+            <br> <br>
+            <span id="pick1"> <b>Pick <br> Your Noodle</b> </span>
+        </div>
+
+        <div>
+            <img src="img/broth_icon.png">
+            <br> <br> <b id="pick2"> Pick <br> Your Broth</b>
+        </div>
+
+        <div>
+            <img class="" src="img/eggs_icon.jpg">
+            <br> <br> <b id="pick3">Add Your <br>Toppings</b>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="menu-site" id="our-menu-link">
+
+        <div class="menu-headline">
+            <h2 id="our"> OUR MENU</h2>
+        </div>
+
+
+        <div class="dishes">
+            <div class="dishes-img">
+                <img class="" src="img/r1.png">
+            </div>
+
+            <div class="dishes-bg">
+
+                <div class="dishes-description">
+                    <h2 style="margin-block-start: 0;
+                    margin-block-end: 0">Tonkasu Ramen </h2>
+                </div>
+
+                <div class="dishes-table">
+                    <table>
+                        <tr>
+                            <td id="chicken1">CHICKEN</td>
+                            <td>11.95€</td>
+                        </tr>
+                        <tr>
+                            <td id="beef1">BEEF</td>
+                            <td>12.95€</td>
+                        </tr>
+                        <tr>
+                            <td id="shrimp1">SHRIMP</td>
+                            <td>13.95€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="dishes">
+            <div class="row-reverse">
+                <div class="dishes-img">
+                    <img class="" src="img/r2.png">
+                </div>
+
+                <div class="dishes-bg">
+
+                    <div class="dishes-description">
+                        <h2 style="margin-block-start: 0;
+                    margin-block-end: 0">Spicy Miso Ramen </h2>
+                    </div>
+
+                    <div class="dishes-table">
+                        <table>
+                            <tr>
+                                <td id="chicken2">CHICKEN</td>
+                                <td>11.95€</td>
+                            </tr>
+                            <tr>
+                                <td id="beef2">BEEF</td>
+                                <td>12.95€</td>
+                            </tr>
+                            <tr>
+                                <td id="shrimp2">SHRIMP</td>
+                                <td>13.95€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="dishes">
+            <div class="dishes-img">
+                <img class="" src="img/r3.png">
+            </div>
+
+            <div class="dishes-bg">
+
+                <div class="dishes-description">
+                    <h2 style="margin-block-start: 0;
+                    margin-block-end: 0">Shio Ramen</h2>
+                </div>
+
+                <div class="dishes-table">
+                    <table>
+                        <tr>
+                            <td id="chicken3">CHICKEN</td>
+                            <td>11.95€</td>
+                        </tr>
+                        <tr>
+                            <td id="beef3">BEEF</td>
+                            <td>12.95€</td>
+                        </tr>
+                        <tr>
+                            <td id="shrimp3">SHRIMP</td>
+                            <td>13.95€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="find-us-at-headline" id="find-us-at-link">
+        <h2 id="find">FIND US AT</h2>
+    </div>
+
+    <div class="adress">
+        <img class="adress-img" img src="img/LO.png">
+        <p>Kapuzinerstraße 31, München, BY 80337</p>
+    </div>
+
+    <div class="location" id="find-us-at-link">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.207967182612!2d11.559009251178402!3d48.12551265987813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1669681655714!5m2!1sde!2sde"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="iframe"> </iframe>
+    </div>
+
+
+    <div class="social">
+        <img class="bottom-flower" src="img/saklogo.png">
+
+        <div class="logo-bottom">
+
+            <div class="logo-bottom-1"> <a href="http:/facebook.com"> <img src="img/fb.png"> </a></div>
+            <div class="logo-bottom-1"> <a href="http:/instagram.com"> <img src="img/ins.png"> </a></div>
+            <div class="logo-bottom-1"> <a href="http:/google.com"> <img src="img/tripad.png"> </a></div>
+
+        </div>
+    </div>
+
+
+    <div class="footer" id="about-link">
+        <div class="footer-child">
+            Copyright 2022 - Sakura Ramen
+        </div>
+
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+
+        <div class="footer-child">
+            Impressum <br>
+            Kontakt <br>
+            Datenschutz <br>
+            Cookie-Richtlinie <br>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

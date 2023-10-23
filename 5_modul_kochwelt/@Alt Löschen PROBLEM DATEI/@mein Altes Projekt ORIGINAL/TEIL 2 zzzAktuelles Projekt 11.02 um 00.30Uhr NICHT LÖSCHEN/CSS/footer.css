@@ -1,0 +1,151 @@
+.main-footer {
+    background-color: var(--foorer-background);
+    font-family: var(--page-fonts-family);
+    color: var(--bg1-background);
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.main-container {
+    font-size: 14px;
+    padding-right: 16px;
+}
+
+.footer-main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.footer-main-content a {
+    color: var(--bg1-background);
+    text-decoration: none;
+    border: 3px solid transparent;
+}
+
+.footer-main-content a:hover {
+    color: var(--bg1-background);
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+
+.kochweltlogo {
+    object-fit: contain;
+    height: 60px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 10px;
+}
+
+.footer-social-media {
+    color: var(--bg1-background);
+    padding-left: 16px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social-media img {
+    width: 40px;
+    height: 40px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.footer-social-media img:hover {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(99%) saturate(1878%) hue-rotate(95deg) brightness(96%) contrast(105%);
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.p-tag-sizing-2 {
+    font-size: 14px;
+    text-align: start;
+}
+
+.p-tag-sizing-2 a {
+    color: var(--bg1-background);
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.p-tag-sizing-2 a:hover {
+    color: var(--bg1-background);
+    text-decoration: none;
+    background-color: var(--main-btn-color);
+    border: 1px solid transparent;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .kochweltlogo {
+        height: 50px;
+    }
+
+    .main-container {
+        font-size: 12px;
+    }
+
+    .p-tag-sizing-2 {
+        font-size: 12px;
+    }
+
+    .footer-social-media img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main-footer {
+        height: 145px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .footer-main-content {
+        margin-top: 10px;
+    }
+
+    .main-footer {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .kochweltlogo {
+        padding-left: 45px;
+    }
+
+    .a-footer {
+        padding-left: 50px;
+    }
+
+    .p-tag-sizing-1 {
+        padding-left: 50px;
+    }
+
+    .p-tag-sizing-2 {
+        text-align: center;
+    }
+
+
+}
+
+

@@ -1,0 +1,483 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+
+    <title>Sakura Restaurant - Japanische Spezialitäten </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container-1-Hauptbild {
+            background-image: url(img/bgr1.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container-2-menu-link {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 30px;
+            left: 0;
+            right: 0;
+            font-size: 35px;
+            font-family: 'Raleway', bold;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            column-gap: 100px;
+        }
+
+        .link a {
+            color: beige;
+            
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            background-color: rgba(243, 57, 57, 0.918);
+            text-decoration: underline;
+
+        }
+
+        .flower-bild-1-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 150px;
+            width: 100px;
+            height: 80px;
+        }
+
+        .flower-bild-bild {
+            width: 100%;
+        }
+
+        .phone-container {
+            background-color: rgba(177, 4, 4, 0.712);
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 1px solid white;
+            padding: 8px;
+            color: white;
+            display: flex;
+        }
+
+        .telefon-bild {
+            width: 30px;
+        }
+
+        .container-3-titel-sakura-ramen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 215; 
+            font-size: 65px;
+            font-family: 'Raleway', bold;
+            color: #ffffff;
+
+        }
+
+        .container-4-titel-the-best-ramen-in-town {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            font-family: 'Raleway';
+            color:#ffffff;
+        }
+
+
+        
+
+
+        .how-to-order {
+            text-align: center;
+            font-size: 40pt;
+            font-family: 'Raleway', bold;
+            color: rgb(152, 12, 12);
+        }
+
+        .step-hauptcontainer {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: 25pt;
+            font-family: 'Economica', bold;
+        }
+
+
+        .our-menu-hauptbild-container {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 65px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .our-menu-text {
+            display: flex;
+            justify-content: center;
+            font-size: 50pt;
+            font-family: 'Economica', bold;
+            color: rgb(152, 12, 12);
+        }
+
+        .our-menu-hauptcontainer-1 {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: blue;
+        }
+
+        .our-menu-bild-1 {
+            background-color: green;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .our-menu-1-tabelle-container {
+            background-color: deeppink;
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .our-menu-1-tonkasu-ramen {
+            background-color: rgb(231, 235, 14);
+            font-family: 'Economica', bold;
+            font-size: 40px;
+            width: 100%;
+            height: 85px;
+        }
+
+        .our-menu-1-tabelle {
+            background-color: beige;
+            font-family: 'Economica', bold;
+            width: 100%;
+            font-size: 80pt;
+        }
+
+        table {
+            font-size: 40px
+        }
+
+        td:last-of-type {
+            padding-left: 350px;
+        }
+
+
+        .row-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            width: 83%;
+        }
+
+
+
+        .find-us-at {
+            text-align: center;
+            font-size: 40pt;
+            font-family: 'Raleway', bold;
+            color: rgb(152, 12, 12);
+        }
+
+        .about {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 10pt;
+            font-family: 'Raleway', bold;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .about-child {
+            font-size: 10pt;
+            font-family: 'Raleway', bold;
+        }
+
+        .adresse {
+            display: flex;
+            font-size: 30pt;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .location-bild {
+            width: 23px;
+            padding-right: 10px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .flower-bild-footer {
+            width: 500px;
+            height: 80px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-2-menu-link">
+        <div class="flower-bild-1-container">
+            <img src="img/saku.png" class="flower-bild-bild">
+        </div>
+
+        <div class="link">
+            <a href="#our-menu-link">MENU</a>
+            <a href="#find-us-at-link">LOCATIONS</a>
+            <a href="#about-link">ABOUT</a>
+            <a class="phone-container" href="tel:+49(0)76 54564534"><img class="telefon-bild" src="img/phone.png">0176
+                54564536</a>
+        </div>
+    </div>
+
+
+    <div class="container-1-Hauptbild">
+        <div class="container-3-titel-sakura-ramen">
+            <h1>Sakura Ramen</h1>
+        </div>
+
+        <span class="container-4-titel-the-best-ramen-in-town">
+            <h2>THE BEST RAMEN IN TOWN</h2>
+        </span>
+    </div>
+
+
+    <div class="how-to-order">
+        <h2>HOW TO ORDER</h2>
+    </div>
+
+
+    <div class="step-hauptcontainer">
+
+        <div class="">
+            <img class="" src="img/bowl_icon.jpg">
+            <br> <br> <b>Pick <br> Your Noodle</b>
+        </div>
+
+        <div class="s">
+            <img class="" src="img/broth_icon.png">
+            <br> <br> <b> Pick <br> Your Broth</b>
+        </div>
+
+        <div class="">
+            <img class="" src="img/eggs_icon.jpg">
+            <br> <br> <b>Add Your <br>Toppings</b>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="our-menu-hauptbild-container" id="our-menu-link">
+
+        <div class="our-menu-text">
+            <h2> OUR MENU</h2>
+        </div>
+
+
+        <div class="our-menu-hauptcontainer-1">
+            <div class="our-menu-bild-1">
+                <img class="" src="img/r1.png">
+            </div>
+
+            <div class="our-menu-1-tabelle-container">
+
+                <div class="our-menu-1-tonkasu-ramen">
+                    <h2 style="margin-block-start: 0;
+                    margin-block-end: 0">Tonkasu Ramen </h2>
+                </div>
+
+                <div class="our-menu-1-tabelle">
+                    <table>
+                        <tr>
+                            <td>CHICKEN</td>
+                            <td>11.95€</td>
+                        </tr>
+                        <tr>
+                            <td>BEEF</td>
+                            <td>12.95€</td>
+                        </tr>
+                        <tr>
+                            <td>SHRIMP</td>
+                            <td>13.95€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="our-menu-hauptcontainer-1">
+            <div class="row-reverse">
+                <div class="our-menu-bild-1">
+                    <img class="" src="img/r2.png">
+                </div>
+
+                <div class="our-menu-1-tabelle-container">
+
+                    <div class="our-menu-1-tonkasu-ramen">
+                        <h2 style="margin-block-start: 0;
+                    margin-block-end: 0">Spicy Miso Ramen </h2>
+                    </div>
+
+                    <div class="our-menu-1-tabelle">
+                        <table>
+                            <tr>
+                                <td>CHICKEN</td>
+                                <td>11.95€</td>
+                            </tr>
+                            <tr>
+                                <td>BEEF</td>
+                                <td>12.95€</td>
+                            </tr>
+                            <tr>
+                                <td>SHRIMP</td>
+                                <td>13.95€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="our-menu-hauptcontainer-1">
+            <div class="our-menu-bild-1">
+                <img class="" src="img/r3.png">
+            </div>
+
+            <div class="our-menu-1-tabelle-container">
+
+                <div class="our-menu-1-tonkasu-ramen">
+                    <h2 style="margin-block-start: 0;
+                    margin-block-end: 0">Shio Ramen</h2>
+                </div>
+
+                <div class="our-menu-1-tabelle">
+                    <table>
+                        <tr>
+                            <td>CHICKEN</td>
+                            <td>11.95€</td>
+                        </tr>
+                        <tr>
+                            <td>BEEF</td>
+                            <td>12.95€</td>
+                        </tr>
+                        <tr>
+                            <td>SHRIMP</td>
+                            <td>13.95€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="find-us-at" id="find-us-at-link">
+        <h2>FIND US AT</h2>
+    </div>
+
+    <div class="adresse">
+        <img class="Location-Bild" img src="img/LO.png">
+        <p>Kapuzinerstraße 31, München, BY 80337</p>
+    </div>
+
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.207967182612!2d11.559009251178402!3d48.12551265987813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1669681655714!5m2!1sde!2sde"  
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <div class="about" id="about-link">
+        <div class="about-child">
+            Copyright 2022 - Sakura Ramen
+        </div>
+
+        <div class="about-child">
+            Impressum <br>
+            Kontakt <br>
+            Datenschutz <br>
+            Cookie-Richtlinie <br>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <img class="flower-bild-footer" src="img/saklogo.png">
+
+        <div>
+            <a href="http:/facebook.com"> <img src="img/fb.png"> </a>
+            <a href="http:/instagram.com"> <img src="img/ins.png"> </a>
+            <a href="http:/google.com"> <img src="img/tripad.png"> </a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

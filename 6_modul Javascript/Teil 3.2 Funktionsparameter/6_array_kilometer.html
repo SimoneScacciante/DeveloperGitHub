@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 100px 50px;
+        }
+
+        table {
+            border: 1px solid lightgray;
+            border-collapse: collapse;
+        }
+
+        table td,
+
+        th {
+            min-width: 100px;
+            text-align: start;
+            padding: 4px;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Funktionsparameter</h1>
+    <p>→ Öffne die "Console"</p>
+
+
+    <p>
+        6. Wie viel Strecke kannst du innerhalb von 24 Stunden zurücklegen? Hierfür stellen wir eine Tabelle auf, welche
+        die Geschwindigkeit und Zeit multipliziert.<br>
+        <br>
+
+    </p>
+
+    <table>
+        <tr>
+            <th>Fortbewegungsmittel</th>
+            <th>Geschwindigkeit</th>
+            <th>Zeit</th>
+            <th>Ergebnis</th>
+            <th>Berechnen</th>
+        </tr>
+        <tr>
+            <td>Zu Fuß</td>
+            <td>5 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance1"></td>
+            <td><button onclick="calculateDistance(5, 24, 'distance1')">Berechnen</button></td>
+        </tr>
+
+
+        <tr>
+            <td>Joggen</td>
+            <td>12 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance2"></td>
+            <td><button onclick="calculateDistance(12, 24, 'distance2')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Fahrrad</td>
+            <td>18 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance3"></td>
+            <td><button onclick="calculateDistance(18, 24, 'distance3')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Auto</td>
+            <td>100 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance4"></td>
+            <td><button onclick="calculateDistance(100, 24, 'distance4')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Flugzeug</td>
+            <td>800 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance5"></td>
+            <td><button onclick="calculateDistance(800, 24, 'distance5')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>ISS Raumstation</td>
+            <td>28800 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance6"></td>
+            <td><button onclick="calculateDistance(28800, 24, 'distance6')">Berechnen</button></td>
+        </tr>
+    </table>
+
+
+    <script>
+
+        function calculateDistance(km, std, mytext) {
+            let calc = km * std;
+            document.getElementById(mytext).innerHTML = calc;
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+<!-- 
+---- ORIGINAL AUFGABE -----
+
+    <p>
+        6. Wie viel Strecke kannst du innerhalb von 24 Stunden zurücklegen? Hierfür stellen wir eine Tabelle auf, welche die Geschwindigkeit und Zeit multipliziert.<br>
+        <br>
+
+    </p>
+
+    <table>
+        <tr>
+            <th>Fortbewegungsmittel</th>
+            <th>Geschwindigkeit</th>
+            <th>Zeit</th>
+            <th>Ergebnis</th>
+            <th>Berechnen</th>
+        </tr>
+        <tr>
+            <td>Zu Fuß</td>
+            <td>5 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance1"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Joggen</td>
+            <td>12 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance2"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Fahrrad</td>
+            <td>18 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance3"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Auto</td>
+            <td>100 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance4"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+
+        <tr>
+            <td>Flugzeug</td>
+            <td>800 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance5"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>ISS Raumstation</td>
+            <td>28800 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance6"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+    </table>
+
+
+    
+        function calculateDistance() {
+            // TODO: Diese Funktion muss (inklusive Funktionsparameter) implementiert werden. 
+            // Orientiere dich an der Funktion aus Aufgabe 5.
+        }
+
+
+    -->

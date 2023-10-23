@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let names = ['Davide', 'Clara', 'Christian', 'Petra'];
+
+        for (let i = 0; i < names.length; i++) {
+            console.log('Hallo ' + names[i]);
+        }
+
+        function addNames() {
+            let list = document.getElementById('list');
+            
+
+            for (let i = 0; i < names.length; i++) {
+                let li = document.createElement('li');
+                li.innerHTML = names[i];
+                list.appendChild(li);
+            }
+        }
+
+        function addCurrentName() { //erst durch "Klick" wird Funktion aktiviert
+            let currentName = document.getElementById('new-name').value;
+            names.push(currentName) //1. wird in array eingefügt aber noch nicht angezeigt
+
+            addNames(); // 2. jetzt wird in array angezeigt, aber Liste erscheint doppelt 
+                        //    da erste Funktion wieder ausgeführt wird
+        }
+
+
+    </script>
+
+</head>
+
+<body onload="addNames()">
+    <ul id='list'>
+    </ul>
+
+    <input id="new-name" placeholder="Name deines Freundes"> <button onclick="addCurrentName()">Hinzufügen</button>
+</body>
+
+</html>

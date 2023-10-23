@@ -1,0 +1,105 @@
+.main-footer{
+    background-color: var(--foorer-background);
+    font-family: var(--page-fonts-family);
+    color: var(--bg1-background);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.main-container{
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px; 
+}
+
+.footer-main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+   .footer-main-content a {
+    color:var(--bg1-background);
+    text-decoration: none; 
+    border: 3px solid transparent;   
+}
+
+   .footer-main-content a:hover {
+    color:var(--bg1-background);
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+
+.kochweltlogo {
+    object-fit: contain;
+    height: 75px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 35px;
+}
+.footer-social-media{
+    color: var(--bg1-background);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 35px;  
+}
+
+.footer-social-media img {
+    width: 48px;
+    height: 48px;
+}
+.footer-social-media img:hover {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(99%) saturate(1878%) hue-rotate(95deg) brightness(96%) contrast(105%);  
+}
+
+.p-tag-sizing-2{
+    font-size: 14px;
+    text-align: start;
+}
+
+.p-tag-sizing-2 a {
+    color:var(--bg1-background);
+    text-decoration: none; 
+    border: 1px solid transparent;
+}
+.p-tag-sizing-2 a:hover {
+    color:var(--bg1-background);
+    text-decoration: none;
+    background-color: var(--main-btn-color);
+    border: 1px solid transparent; 
+}
+
+@media screen and (max-width: 900px){
+    .main-footer{
+        background-color: var(--foorer-background);
+        font-family: var(--page-fonts-family);
+        color: var(--bg1-background);
+        height: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .kochweltlogo {
+        object-fit: contain;
+        height:50px;
+        filter: brightness(0) invert(1);
+    }
+    .footer-main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .p-tag-sizing-2{
+        text-align: center;
+    }
+    .footer-social-media img {
+        width: 30px;
+        height: 30px;
+    }
+}   

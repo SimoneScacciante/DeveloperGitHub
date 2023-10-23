@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 30px 60px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        let fruits = ['Apple', 'Banana', 'Strawberry', 'Blackberry', 'Raspberry'];
+
+        function exercise10() {
+            
+            let TextEingabe = document.getElementById('newfruit').value;
+            fruits.push(TextEingabe);
+
+            for (let i = 0; i < fruits.length; i++) {
+                document.getElementById('list10').innerHTML += `<li>${fruits[i]}</li>`
+            }
+
+
+
+            document.getElementById('newfruit').value = ``;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input id="newfruit" value="Orange"> <button onclick="exercise10()">Hinzufügen</button>
+
+    <p>10) Füge in das Array <code>fruits</code> die Frucht aus dem Textfeld mit der ID <b>newfruit</b> hinzu. Zeige
+        anschließend das gesamte Array in der liste <code>list10</code> an.</p>
+    <ul id="list10">
+
+    </ul>
+
+</body>
+
+</html>

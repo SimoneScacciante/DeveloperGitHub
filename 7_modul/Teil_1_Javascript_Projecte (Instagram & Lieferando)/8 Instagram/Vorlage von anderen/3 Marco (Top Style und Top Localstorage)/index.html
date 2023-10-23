@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instaklon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="renderPosts()">
+    <aside>
+        <div class="growbox">
+            <div class="asideTop">
+                <div class="logoBox">
+                    <img class="Logo" src="./img/instagram-text-icon.png" alt="Logo" />
+                </div>
+                <nav>
+                    <a class="aside-Nav InstaLogoSmall" href="#">
+              <img class="icon" src="./img/favicon.svg" alt="#" />
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img class="icon" src="./img/home-icon.png" alt="#" />
+              <span class="navSpan">Startseite</span>
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img class="icon" src="./img/search-icon.png" alt="#" />
+              <span class="navSpan">Suche</span>
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img
+                class="icon"
+                src="./img/compass-northeast-icon.png"
+                alt="#"
+              />
+              <span class="navSpan">Entdecken</span>
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img class="icon" src="./img/instagram-reels-icon.png" alt="#" />
+              <span class="navSpan">Reels</span>
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img class="icon" src="./img/instagram-share-icon.png" alt="#" />
+              <span class="navSpan">Nachrichten</span>
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img class="icon" src="./img/heart-thin-icon.png" alt="#" />
+              <span class="navSpan">Benachrichtigungen</span>
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img class="icon" src="./img/plus-square-line-icon.png" alt="#" />
+              <span class="navSpan">Erstellen</span>
+            </a>
+                    <a class="aside-Nav" href="#">
+              <img class="iconProfile radius50" src="./img/marco.jpg" alt="#" />
+              <span class="navSpan">Profil</span>
+            </a>
+                </nav>
+            </div>
+            <div class="more">
+                <a class="aside-Nav icon" href="#">
+            <img class="icon" src="./img/threads-icon.png" alt="#" />
+            <span class="navSpan">Threads</span>
+          </a>
+                <a class="aside-Nav" href="#">
+            <img
+              class="icon"
+              src="./img/three-horizontal-lines-icon.png"
+              alt="#"
+            />
+            <span class="navSpan">Mehr</span>
+          </a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="content-section">
+        <section class="main-content">
+            <section class="subscriptionsReels-section">
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/ambassador-852766_640.jpg" alt="profilbild" />
+                    <span class="fs12">serge2</span>
+                </div>
+
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/buzzard-5501613_640.jpg" alt="profilbild" />
+                    <span class="fs12">edgerunner</span>
+                </div>
+
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/cartoon-871836_640.jpg" alt="profilbild" />
+                    <span class="fs12">solohan</span>
+                </div>
+
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/man-2785071_640.jpg" alt="profilbild" />
+                    <span class="fs12">chubacca4</span>
+                </div>
+
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/woman-1132617_640.jpg" alt="profilbild" />
+                    <span class="fs12">mustermelanie</span>
+                </div>
+
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/man-979980_640.jpg" alt="profilbild" />
+                    <span class="fs12">kaled123</span>
+                </div>
+
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/smile-1275668_640.jpg" alt="profilbild" />
+                    <span class="fs12">claudinchen</span>
+                </div>
+
+                <div class="subscriptionProfile">
+                    <img class="avatar-Subscriptions" src="./img/redhead-4789668_640.jpg" alt="profilbild" />
+                    <span class="fs12">paula3232</span>
+                </div>
+            </section>
+
+            <section class="posts-section" id="posts-section"></section>
+        </section>
+        <section class="bottomMenu">
+            <nav>
+                <a class="aside-Nav" href="#">
+            <img class="iconbottom" src="./img/home-icon.png" alt="#" />
+            <span class="navSpan">Startseite</span>
+          </a>
+                <a class="aside-Nav" href="#">
+            <img class="iconbottom" src="./img/search-icon.png" alt="#" />
+            <span class="navSpan">Suche</span>
+          </a>
+
+                <a class="aside-Nav" href="#">
+            <img class="iconbottom" src="./img/instagram-reels-icon.png" alt="#" />
+            <span class="navSpan">Reels</span>
+          </a>
+                <a class="aside-Nav" href="#">
+            <img class="iconbottom" src="./img/plus-square-line-icon.png" alt="#" />
+            <span class="navSpan">Erstellen</span>
+          </a>
+                <a class="aside-Nav" href="#">
+            <img class="iconbottom" src="./img/instagram-share-icon.png" alt="#" />
+            <span class="navSpan">Nachrichten</span>
+          </a>
+                <a class="aside-Nav" href="#">
+            <img class="iconbottom" src="./img/heart-thin-icon.png" alt="#" />
+            <span class="navSpan">Benachrichtigungen</span>
+          </a>
+                <a class="aside-Nav" href="#">
+            <img class="iconbottomProfile radius50" src="./img/marco.jpg" alt="#" />
+            <span class="navSpan">Profil</span>
+          </a>
+            </nav>
+        </section>
+        <section class="right-content">
+            <div class="myProfile">
+                <div class="mp-left">
+                    <img class="avatar-suggested" src="./img/marco.jpg" alt="#" class="profileImgRound" />
+
+                    <div class="myProfile-Names fs14">
+                        <span class="fw-Bold">melendros_</span>
+                        <span class="fs14 colorLG">Marco Ammann</span>
+                    </div>
+                </div>
+                <a href="#" class="profiles-Interactions fs12 lightblue fw-Bold">Wechseln</a
+          >
+        </div>
+
+        <div class="suggested-Profiles fs14">
+          <div class="sp-title fs14">
+            <span class="colorLG-Darker">Vorschläge für dich</span>
+            <a href="#" class="fs12 fw-Bold">Alle ansehen</a>
+            </div>
+            <div class="suggested-Profile">
+                <div class="sp-left">
+                    <img class="avatar-suggested" src="./img/cat-1817970_640.jpg" alt="#" />
+                    <div class="suggestedProfile-Names">
+                        <span class="fw-Bold">samantha94</span>
+                        <span class="fs12 colorLG">1 gemeinsamer Freund</span>
+                    </div>
+                </div>
+                <a href="#" class="profiles-Interactions fs12 lightblue fw-Bold">Folgen</a
+            >
+          </div>
+
+          <div class="suggested-Profile">
+            <div class="sp-left">
+              <img
+                class="avatar-suggested"
+                src="./img/happy-1836445_640.jpg"
+                alt="#"
+              />
+              <div class="suggestedProfile-Names">
+                <span class="fw-Bold">anaton12345</span>
+                <span class="fs12 colorLG">Vorschläge für dich</span>
+              </div>
+            </div>
+            <a href="#" class="profiles-Interactions fs12 lightblue fw-Bold"
+              >Folgen</a
+            >
+          </div>
+
+          <div class="suggested-Profile">
+            <div class="sp-left">
+              <img
+                class="avatar-suggested"
+                src="./img//portrait-3353699_640.jpg"
+                alt="#"
+              />
+              <div class="suggestedProfile-Names">
+                <span class="fw-Bold">eddiOfficial1292</span>
+                <span class="fs12 colorLG">Neu auf Instaklon</span>
+              </div>
+            </div>
+            <a href="#" class="profiles-Interactions fs12 lightblue fw-Bold"
+              >Folgen</a
+            >
+          </div>
+        </div>
+
+        <footer>
+          <div>
+            <a href="#">Impressum</a> | <a href="#">Jobs</a> |
+                <a href="#">Datenschutz</a> | <a href="#">Kontakt</a> |
+                <a href="#">Standorte</a>
+                <a href="#">Meta</a> | <a href="#">Verified</a> |
+                <a href="#">Presse</a> | <a href="#">Info</a> |
+                <a href="#">Hilfe</a> |
+                <a href="#">Nutzungsbedingungen</a>
+            </div>
+
+            <div class="copyright">
+                <span class="fw-Bold fs14">© 2023 <a href="http://instagram.com">Instagram </a>cloned from
+              Marco Ammann</span
+            >
+          </div>
+        </footer>
+      </section>
+    </main>
+
+  </body>
+</html>

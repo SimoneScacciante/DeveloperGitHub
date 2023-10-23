@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funktionsparameter</title>
+    <style>
+        body {
+            padding: 100px 200px;
+        }
+        
+        p {
+            margin-top: 80px;
+        }
+    </style>
+
+    <script>
+        let food = ['Apple', 'Spinach', 'Cookie', 'Pumpkin'];
+
+
+
+
+
+
+
+
+
+
+        /**
+         * Aufgabe 5
+         */
+        function pythagoras(a, b, container) {
+            let aabb = a * a + b * b; // Caclulates a² + b²
+            let result = Math.sqrt(aabb); // Calculates the root (dt: Wurzel) of the variable aabb
+            document.getElementById(container).innerHTML = result;
+        }
+
+
+        /**
+         * Aufgabe 6
+         */
+        function calculateDistance() {
+            // TODO: Diese Funktion muss (inklusive Funktionsparameter) implementiert werden. 
+            // Orientiere dich an der Funktion aus Aufgabe 5.
+        }
+    </script>
+</head>
+
+<body>
+
+
+
+
+    <p>5) Der Satz des Pythagoras ist jedem noch aus der Schulzeit bekannt: <code>a² + b² = c²</code>. In dieser Übung rechnen wir unser c² für verschiedene Werte von a und b aus.<br>
+
+        <br> 5. 1. Versuche die Funktion in der ersten Zeile nachzuvollziehen. Sorge dafür, dass alle Ergebnisse aus der Tabelle richtig angezeigt werden.
+
+        <br> 5. 2. Füge einen Button "Berechnen" in die zweite Spalte ein, der das die Rechnung <code>2² + 5²</code> ausrechnet.
+
+        <br> 5.3. Spalte 3 der Tabelle verfügt bereits über einen "Berechnen" Button. Sobald dieser gedrückt wird, wird jedoch eine Fehlermeldung angezeigt. Verstehe und löse diesen Fehler.
+    </p>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>a² + b²</th>
+            <th>c²</th>
+            <th>Berechnen</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>1² + 1²</td>
+            <td id="result1"></td>
+            <td><button onclick="pythagoras(1, 1, 'result1')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>2.</td>
+            <td>2² + 5²</td>
+            <td id="result2"></td>
+            <td></td>
+        </tr>
+
+
+        <tr>
+            <td>3.</td>
+            <td>3² + 2²</td>
+            <td></td>
+            <td><button onclick="pythagoras(3, 2, 'result3')">Berechnen</button></td>
+        </tr>
+    </table>
+
+
+
+    <p>
+        6. Wie viel Strecke kannst du innerhalb von 24 Stunden zurücklegen? Hierfür stellen wir eine Tabelle auf, welche die Geschwindigkeit und Zeit multipliziert.<br>
+        <br>
+
+    </p>
+
+    <table>
+        <tr>
+            <th>Fortbewegungsmittel</th>
+            <th>Geschwindigkeit</th>
+            <th>Zeit</th>
+            <th>Ergebnis</th>
+            <th>Berechnen</th>
+        </tr>
+        <tr>
+            <td>Zu Fuß</td>
+            <td>5 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance1"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Joggen</td>
+            <td>12 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance2"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Fahrrad</td>
+            <td>18 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance3"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>Auto</td>
+            <td>100 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance4"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+
+        <tr>
+            <td>Flugzeug</td>
+            <td>800 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance5"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+
+        <tr>
+            <td>ISS Raumstation</td>
+            <td>28800 km/h</td>
+            <td>24 Stunden</td>
+            <td id="distance6"></td>
+            <td><button onclick="calculateDistance('Hier Parameter einfügen')">Berechnen</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>

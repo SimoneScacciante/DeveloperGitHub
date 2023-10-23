@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 35%;
+            display: flex;
+        }
+    </style>
+
+    <script>
+        let images = ['z1.jpg','z2.jpg','z3.jpg','z4.jpg','z5.jpg','z6.jpg'];
+
+        function apfel_1() {
+            document.getElementById('image').src = images[0];
+            setTimeout(apfel_2, 1000);
+        }
+        function apfel_2() {
+            document.getElementById('image').src = images[1];
+            setTimeout(apfel_3, 1000);
+        }
+        function apfel_3() {
+            document.getElementById('image').src = images[2];
+            setTimeout(apfel_4, 1000);
+        }
+        function apfel_4() {
+            document.getElementById('image').src = images[3];
+            setTimeout(apfel_5, 1000);
+        }
+        function apfel_5() {
+            document.getElementById('image').src = images[4];
+            setTimeout(apfel_6, 1000);
+        }
+        function apfel_6() {
+            document.getElementById('image').src = images[5];
+            setTimeout(apfel_1, 1000);
+        }
+    </script>
+
+</head>
+
+<body onload="apfel_1()">
+    <img id="image" src="z1.jpg">
+</body>
+
+</html>

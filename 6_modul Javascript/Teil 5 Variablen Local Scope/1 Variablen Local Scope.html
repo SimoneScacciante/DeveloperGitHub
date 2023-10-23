@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--- 
+        Hello + Junus
+        Bye, bye + Junus
+        Bye, bye + 31
+        Bye, bye + Hans
+    -->
+
+    <script>
+        function greet() {
+
+            let name = 'Junus';
+            let age = 31;
+            console.log('Hello ' + name);
+
+            sayGoodbye(name);
+            sayGoodbye(age);
+            sayGoodbye('Hans');
+        }
+
+        function sayGoodbye(name){
+            console.log('Bye, bye ' + name);
+        }
+
+        greet();
+
+
+
+    </script>
+
+</body>
+
+</html>

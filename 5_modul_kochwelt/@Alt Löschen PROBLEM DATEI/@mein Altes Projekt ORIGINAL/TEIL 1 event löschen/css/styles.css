@@ -1,0 +1,35 @@
+@import url(styles_main.css);
+@import url(styles_rezept_pancake.css);
+@import url(styles_kontakt.css);
+@import url(styles_impressum.css);
+
+@import url(footer.css);
+@import url(header.css);
+
+:root {
+    --foorer-background: #454545;
+    --main-btn-color: #008000;
+    --bg1-background: #ffffff;
+    --bg2-background: #efefef;
+
+    --page-fonts-family: 'Raleway', sans-serif;
+        
+    border: 1px solid var(--foorer-background);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--page-fonts-family);
+}
+
+
+/*background-color:var(--main-btn-color);*/
+/*background-color:var(--bg1-background);*/
+/*background-color:var(--bg2-background);*/
+
+/*font-family: var(--page-fonts-family);*/

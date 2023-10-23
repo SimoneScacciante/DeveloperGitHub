@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+
+    <script>
+        let namesArray = [];
+
+        function saveName() {
+            let name = document.getElementById('input').value;
+            
+            namesArray.push(name);
+            setArray('name2', namesArray);
+
+            document.getElementById('headline').innerHTML = `Hallo ${namesArray}`;
+            
+        }
+
+        function setArray(Testkey, Testarray) { //linke teil...key gehört zu name2 und rechte teil array gehört zu namesArray// Frage an dich Simon... was ist namesArray? Antwort: namesArray ist dein array! somit array gehört zu array
+            localStorage.setItem(Testkey, JSON.stringify(Testarray));
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 id="headline"></h1>
+
+    <input id="input" type="text">
+    <button onclick="saveName()">Hinzufügen</button>
+</body>
+
+
+</html>

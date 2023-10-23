@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .rectangle {
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            margin: 8px;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+    </style>
+
+    <script>
+
+        function hide() {
+            document.getElementById('1').classList.add('d-none');
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <div id="1" onclick="hide('1')" class="rectangle"> 1 </div>
+    <div id="2" onclick="hide('2')" class="rectangle"> 2 </div>
+    <div id="3" onclick="hide('3')" class="rectangle"> 3 </div>
+    <div id="4" onclick="hide('4')" class="rectangle"> 4 </div>
+
+</body>
+
+</html>

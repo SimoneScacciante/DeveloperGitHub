@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px 200px;
+        }
+        
+        p {
+            margin-top: 64px;
+        }
+    </style>
+
+<script>
+
+        function exercise4() { 
+            for (let i = 10; i > 0; i--)
+           
+            document.getElementById('list4').innerHTML += `<li>${i}</li>`
+        }
+
+    
+
+</script>
+</head>
+<body onload="exercise4()">
+
+    <p>4) Füge <code>&lt;li&gt;</code>-Elemente mit den Zahlen von 10 - 0 ein. Tipp: mit <code>i--</code> verringerst du den Wert von i um 1.</p>
+    <ul id="list4">
+
+    </ul>
+    
+</body>
+</html>

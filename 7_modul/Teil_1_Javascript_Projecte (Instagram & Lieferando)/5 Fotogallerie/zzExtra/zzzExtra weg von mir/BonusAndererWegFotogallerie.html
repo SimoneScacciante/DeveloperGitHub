@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 35%;
+            display: flex;
+        }
+    </style>
+
+    <script>          
+        let images = ['/img/z1.jpg', '/img/z2.jpg', '/img/z3.jpg', '/img/z4.jpg', '/img/z5.jpg', '/img/z6.jpg'];
+        let currentImage = 0;
+
+        function start() {
+            showImage(currentImage);
+            currentImage++;
+                                        
+            if (currentImage == 6) {    
+                currentImage = 0;       
+            }
+ 
+            setTimeout(start, 500)
+        }
+
+        function showImage(apfel) {
+            document.getElementById('image').src = images[apfel];
+        }
+
+    </script>
+
+</head>
+
+<body onload="start()">
+    <img id="image" src="z1.jpg">
+</body>
+
+</html>

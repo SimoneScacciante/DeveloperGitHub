@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px 200px;
+        }
+
+        p {
+            margin-top: 64px;
+        }
+    </style>
+    <script>
+        function init() {
+            exercise1();
+            exercise2();
+            exercise3();
+            exercise4();
+            exercise5();
+            exercise6();
+            exercise7();
+            exercise8();
+        }
+        function exercise1() {
+            let list1 = document.getElementById('list1');
+
+            for (let i = 0; i < 11; i++) {
+                list1.innerHTML += `<li>${i}</li>`;
+            }
+        }
+    </script>
+</head>
+
+<body onload="init()">
+
+    <h1>
+        Übungen zur For-Schleife 
+    </h1>
+
+    <p>Ziel dieser Übung ist es, die For-Schleife besser zu verstehen. Versuche, alle Übungen selbstständig zu lösen.
+    </p>
+
+    <p>1) Füge 10 <code>&lt;li&gt;</code> Elemente ein, um die Zahlen von 0 bis 9 darzustellen.</p>
+    <ul id="list1">
+
+    </ul>
+
+</body>
+
+</html>

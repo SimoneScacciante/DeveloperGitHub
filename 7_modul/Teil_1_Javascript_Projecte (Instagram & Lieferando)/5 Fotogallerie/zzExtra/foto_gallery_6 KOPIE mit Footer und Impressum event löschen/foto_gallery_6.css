@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    background-color: #d3d3d38a;
+}
+
+.title {
+    font-family: 'Abel', sans-serif;
+    padding-right: 27px;
+    font-size: 75px;
+}
+
+
+.head-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 28px;
+}
+
+
+.logo {
+    height: 100px;
+    margin-top: 55px;
+}
+
+.title_a_href {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(5, 0, 5, 0.9);
+    border-radius: 25px;
+
+}
+
+
+
+
+
+
+.imgLoadImages {
+    border-radius: 25px;
+}
+
+.imgPopup {
+    border-radius: 25px;
+
+}
+
+
+
+.backspace {
+    cursor: pointer;
+    height: 80px;
+    position: absolute;
+    top: 75px;
+    left: 400px;
+
+}
+
+
+.right-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-right: 50px;
+}
+
+.left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    margin-left: 50px;
+
+}
+
+.arrow-img {
+    height: 80px;
+}
+
+
+
+#photo-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+
+}
+
+
+.imgbox {
+    display: flex;
+    height: 250px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.imgbox:hover {
+    filter: brightness(0.6);
+    transform: scale(1.05);
+    border-radius: 25px;
+
+
+
+
+    /*pointer-events:    ; */
+
+}
+
+
+
+
+#full-img {
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    max-height: 1000px;
+    border-radius: 25px;
+}
+
+
+.d-none {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.footer_logo_container {
+    display: flex;
+    
+}
+
+.footer_universe_title {
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-family: 'Abel', sans-serif;
+    
+}
+
+.font-family {
+    font-family: 'Abel', sans-serif;
+}
+
+.footer_div_logo {
+    padding-top: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.footer_logo_universe {
+    height: 75px;
+}
+
+.footer_impressum {
+    padding-left: 40px;
+    text-align: center;
+}
+
+
+.footer_social_container {
+    padding-top: 10px;
+    
+}
+
+.footer_social_logo {
+    height: 65px;
+    
+}
+
+.footer_created {
+    text-align: center;
+}
+
+.decoration_none {
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+.main-footer {
+    background-color: var(--foorer-background);
+    font-family: var(--page-fonts-family);
+    color: var(--bg1-background);
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.main-container {
+    font-size: 14px;
+    padding-right: 28px;
+}
+
+.footer-main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.footer-main-content a {
+    color: var(--bg1-background);
+    text-decoration: none;
+    border: 3px solid transparent;
+}
+
+.footer-main-content a:hover {
+    color: var(--bg1-background);
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+
+.kochweltlogo {
+    object-fit: contain;
+    height: 60px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 10px;
+}
+
+.footer-social-media {
+    color: var(--bg1-background);
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social-media img {
+    width: 40px;
+    height: 40px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.footer-social-media img:hover {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(99%) saturate(1878%) hue-rotate(95deg) brightness(96%) contrast(105%);
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.p-tag-sizing-2 {
+    font-size: 14px;
+    text-align: start;
+}
+
+.p-tag-sizing-2 a {
+    color: var(--bg1-background);
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.p-tag-sizing-2 a:hover {
+    color: var(--bg1-background);
+    text-decoration: none;
+    background-color: var(--main-btn-color);
+    border: 1px solid transparent;
+}

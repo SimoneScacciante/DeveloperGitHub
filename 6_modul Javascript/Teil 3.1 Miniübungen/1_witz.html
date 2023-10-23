@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 50px 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Miniübungen</h1>
+    <h2>Aufgabe 1</h2>
+
+    <p>1. In dem div-Container mit der ID <code>joke</code> sollen für jeden Button verschiedene Witze angezeigt werden.
+        Die Buttons "Witz 1" und "Witz 2" funktionieren bereits.
+        <br><br> 1.1. Implementiere die Funktion <code>joke3()</code> für den Button "Witz 3".
+
+        <br> 1.2. Füge einen weiteren Button "Witz 4" hinzu.
+    </p>
+
+    <button onclick="joke1()">Witz 1</button>
+    <button onclick="joke2()">Witz 2</button>
+    <button onclick="joke3()">Witz 3</button>
+    <button onclick="joke4()">Witz 4</button>
+
+    <div id="joke"></div>
+
+    <script>
+        function joke1() {
+            document.getElementById('joke').innerHTML =
+                `Wie viele Windows-Anwender braucht man um eine Glühbirne zu wechseln? 100! Einer wechselt die Birne, 99 klicken die Fehlermeldungen weg.`;
+        }
+
+        function joke2() {
+            document.getElementById('joke').innerHTML =
+                `Linux wird nie das meistinstallierte Betriebssystem sein, wenn man bedenkt, wie oft man Windows neu installieren muss!`;
+        }
+
+        function joke3() {
+            document.getElementById('joke').innerHTML =
+                `Ich wähle die NSA, die interessiert sich wenigstens für uns!`
+        }
+
+        function joke4() {
+            document.getElementById('joke').innerHTML =
+                `Letzter Wunsch des Programmierers: "Bitte ein Bit."`
+        }
+
+    </script>
+
+</body>
+
+</html>

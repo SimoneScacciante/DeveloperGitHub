@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 50px 50px;
+        }
+
+        .circle {
+            margin-top: 20px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: red;
+            padding: 20px;
+            box-shadow: -4px 9px 10px rgba(0, 0, 0, 0.4);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Miniübungen</h1>
+    <h2>Aufgabe 4</h2>
+
+    <p>
+        3. Wir wollen HTML Code generieren! Der nachfolgende Button generiert einen Kreis. Probiere ihn aus!
+        <br><br> 3.1. Unser Kreis soll schöner aussehen: Füge ihm die CSS Eigenschaft <code>box-shadow: -4px 9px 10px
+            rgba(0, 0, 0,0.4);</code> hinzu. <i>Tipp: Hierzu brauchst du kein JavaScript.</i>
+        <br> 3.2. Unser Kreis soll nicht einfach nur "Kreis" heißen. Benenne das Wort "Kreis" um in einen Namen, z.B.
+        <b>Claus</b>.
+        <br>3.3. Damit der Name deutlicher zu sehen ist, sollte er <b>Fett</b> geschrieben werden. Verwende dafür das
+        &lt;b&gt;-Tag und füge den Namen in die Mitte ein.
+    </p>
+
+    <!-- Siehe Javascript Abschnitt:  function generatedCircle() {document.getElementById('generatedHTML').innerHTML = `<div class="circle"> Kreis  </div> -->
+
+    <button onclick="generatedCircle()">Kreis generieren</button>
+
+    <div id="generatedHTML"></div>
+    <br>
+    <button onclick="setName('Henriette')">Name ändern</button>
+
+
+    <p>4. Variablen helfen uns, unsere Templates noch weiter zu dynamisieren. In dieser Aufgabe wollen wir unseren Kreis
+        noch weiter optimieren.
+        <br><br> 4.1. Die Funktion <code>generatedCircle()</code> aus Aufgabe 3 generiert einen Kreis. Der Name soll nun
+        durch eine Variable ersetzt werden. Ersetze den Namen des Kreises durch die Variable ${name}.<br> 4.2. Füge
+        einen Button hinzu, der
+        den Wert der Variable <code>name</code> zu "Henriette" ändert. Überprüfe, ob sich der Kreis noch verändert.
+    </p>
+
+    <button onclick="generatedCircle()">Kreis generieren</button>
+
+    <button onclick="setName('Franz')">Franz</button>
+    <button onclick="setName('Gundula')">Gundula</button>
+
+
+
+    <script>
+
+        function generatedCircle() {
+            let name = 'Simon';
+
+            document.getElementById('generatedHTML').innerHTML = `
+            <div class="circle">
+                <b id="TextKreis">${name}</b>    
+            </div>
+            `;
+        }
+
+        
+        /**
+         * Aufgabe 4 (Hilfsfunktion um den Namen zu ändern) 
+         
+         function setName(n) {
+          name = n;
+        }
+         */
+
+         function setName(n) {
+            document.getElementById('TextKreis').innerHTML = `${n}`
+        }
+
+    </script>
+
+</body>
+
+</html>

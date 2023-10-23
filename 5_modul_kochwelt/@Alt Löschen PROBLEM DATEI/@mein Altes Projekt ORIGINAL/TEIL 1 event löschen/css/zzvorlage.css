@@ -1,0 +1,18 @@
+
+
+
+
+.background-farbe {
+    --foorer-background: #454545;
+    --main-btn-color: #008000;
+    --bg1-background: #ffffff;
+    --bg2-background: #efefef;
+    /*background-color:var(--main-btn-color);*/
+    /*background-color:var(--bg1-background);*/
+    /*background-color:var(--bg2-background);*/
+
+}
+
+.umrandung {
+    border: 1px solid var(--foorer-background)
+}

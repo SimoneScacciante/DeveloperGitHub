@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <div class="flags">
+        <button onclick="translation_german ()"> German </button>
+        <button> <a href="4_extra_translate_only_with_tags.html"> English </a></button>
+
+    </div>
+
+
+    <h2 id="best">THE BEST RAMEN IN TOWN</h2>
+
+    <div class="how-to-order">
+        <h2 id="how">HOW TO ORDER</h2>
+    </div>
+
+    <div class="order-section">
+        <div>
+            <span id="pick1"> <b>Pick <br> Your Noodle</b> </span>
+        </div>
+        <div>
+            <br> <br> <b id="pick2"> Pick <br> Your Broth</b>
+        </div>
+        <div>
+            <br> <br> <b id="pick3">Add Your <br>Toppings</b>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function translation_german() {
+        document.getElementById('best').innerHTML = `
+         DER BESTE RAMEN DER STADT
+         `
+        document.getElementById('how').innerHTML = `
+         SO BESTELLST DU
+         `
+
+        document.getElementById('pick1').innerHTML = `
+         <b>Nimm <br>Deine Nudeln</b>
+         `
+
+        document.getElementById('pick2').innerHTML = `
+         Nimm <br> Deine Brühe
+         `
+
+        document.getElementById('pick3').innerHTML = `
+         Füge <br> Deine Zutaten
+         `
+
+        document.getElementById('our').innerHTML = `
+         UNSER MENÜ
+         `
+    }
+</script>
+
+</html>

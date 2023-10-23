@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function greet() {
+
+            let name = document.getElementById('name').value;
+
+            document.getElementById('greeting').innerHTML = '1. Hallo Deutschland! mein Name ist ' + name;
+
+            setTimeout(function () {
+                document.getElementById('greeting').innerHTML = '2. Hello England! my name is ' + name;
+            }, 2000);
+
+            setTimeout(function () {
+                document.getElementById('greeting').innerHTML = '3. Priwiet, Russia! Menya zovut ' + name;
+            }, 4000);
+
+            setTimeout(function () {
+                document.getElementById('greeting').innerHTML = '4. Nǐ hǎo zhōngguó wǒ de míngzì shì ' + name;
+            }, 6000);
+
+
+            // Du musst auf Zeit achten damit alles nacheinander läuft, erster Timer 2sek, zweiter nach 4sek, dritter 6 sek
+            // die Sekunden: 2, 4, 6 bezieht sich immer auf ausführung ab Start Datum, somit immer in 2 Sekunden Intervall
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Gebe deinen Namen ein</h1>
+    <input id="name" type="text">
+    <button onclick="greet()">OK</button>
+    <h2 id="greeting">Hallo</h2>
+</body>
+
+</html>

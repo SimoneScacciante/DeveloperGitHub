@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let names = ['Davide', 'Clara', 'Christian', 'Petra'];
+
+        for (let i = 0; i < names.length; i++) {
+            console.log('Hallo ' + names[i]);
+        }
+
+        function addNames() {
+            let apfel = document.getElementById('list');
+            apfel.innerHTML = ''; 
+
+            for (let i = 0; i < names.length; i++) {
+                let birne = document.createElement('li');
+                birne.innerHTML = names[i];
+                apfel.appendChild(birne);
+            }
+        }
+
+        function addCurrentName() {
+            if (names.length <= 5) {    //wenn weniger wie 5 Werte dann führe Befehl aus...
+                let currentName = document.getElementById('new-name').value;   // Liste wird geleert
+                names.push(currentName);
+
+                document.getElementById('new-name').value = ''; // Dieser Code leert die Leiste
+                                                                // aber zuvor vergebener Wert im Array bleibt
+                addNames();
+            } else {                    // ansonsten führe folgenden Befehl aus...
+                alert('mehr hinzufügen nicht möglich');
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="addNames()">
+    <ul id='list'>
+    </ul>
+
+    <input id="new-name" placeholder="Name deines Freundes"> <button onclick="addCurrentName()">Hinzufügen</button>
+</body>
+
+</html>

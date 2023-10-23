@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 10%;
+            display: flex;
+        }
+    </style>
+
+    <script>
+        let images = ['z1.jpg', 'z2.jpg', 'z3.jpg', 'z4.jpg', 'z5.jpg', 'z6.jpg'];
+        let currentImage = 0;
+
+        function start() {
+            let milliseconds = +document.getElementById('inputfeld').value * 1000;
+
+            if (milliseconds > 10000) {
+                alert('Bitte kleinere Zahl eingeben!')
+            } else {
+
+                if (milliseconds < 1000) {
+                    alert('Bitte mindestens eine Sekunde als Zeit angeben!');
+
+                } else {
+                    showImage(currentImage);
+                    currentImage++;
+
+                    if (currentImage == 6) {  // ACHTUNG: bei if heißt ==5  bis einschliesslich Position 5 (Menschlich gezählt) hier ist es nichts so das er wie ein PC position ab 0 beginnt zu zählen  sondern mit 1 !! also das bild z1.jpg hat Position 1 und nicht 0
+                        currentImage = 0;
+                    }
+                    setTimeout(start, milliseconds) //millisec. tritt sofort in kraft also ab bild z1.jpg mit Wert Position 0
+
+                }
+            }
+        }
+
+        function showImage(i) {
+            document.getElementById('image').src = images[i];
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="number" id="inputfeld" placeholder="wie viel Sekunden?"> <button onclick="start()">Start</button>
+    <img id="image" src="z1.jpg">
+</body>
+
+</html>

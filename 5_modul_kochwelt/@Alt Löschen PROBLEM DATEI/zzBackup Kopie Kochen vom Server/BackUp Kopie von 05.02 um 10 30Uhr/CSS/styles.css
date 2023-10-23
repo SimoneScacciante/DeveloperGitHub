@@ -1,0 +1,37 @@
+@import url(styles_main.css);
+@import url(styles_rezept.css);
+@import url(styles_kontakt.css);
+@import url(styles_impressum.css);
+@import url(datenschutz.css);
+@import url(footer.css);
+@import url(header.css);
+
+:root {
+    --foorer-background: #454545;
+    --main-btn-color: #008000;
+    --bg1-background: #ffffff;
+    --bg2-background: #efefef;
+
+    --page-fonts-family-2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --page-fonts-family: 'Raleway', sans-serif;
+    
+    border: 1px solid var(--foorer-background);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--page-fonts-family);
+}
+
+
+/*background-color:var(--main-btn-color);*/
+/*background-color:var(--bg1-background);*/
+/*background-color:var(--bg2-background);*/
+
+/*font-family: var(--page-fonts-family);*/

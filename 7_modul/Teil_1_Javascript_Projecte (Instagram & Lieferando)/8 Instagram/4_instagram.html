@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+        }
+
+        .contentProfilePicture {
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .menu {
+            padding: 10px;
+            height: 20px;
+        }
+
+        .contentHeader {
+            display: flex;
+            width: 420px;
+            justify-content: space-between;
+        }
+
+        .contentImg {
+            height: 120px;
+            width: 425px;
+        }
+
+        .contentBtns {
+            display: flex;
+
+        }
+
+        .contentIcon {
+            height: 25px;
+        }
+
+        .contentHeartIcon {
+            padding: 1px;
+        }
+
+        .contentHeartIcon:hover {
+            cursor: pointer;
+        }
+
+        .contentIconBookmark{
+            height: 25px;
+            padding-left: 305px;
+        }
+
+        .contentDescriptionContainer {
+            display: flex;
+        }
+
+        .contentDescription {
+            padding-left: 35px;
+        }
+
+
+        .contentCommentStyle {
+            padding-left: 78px;
+        }
+
+
+    </style>
+
+</head>
+
+
+
+<body onload="rendern()">
+
+
+    <div id="contantID3">
+
+    </div>
+
+
+
+    <div id="content">
+
+    </div>
+
+
+
+
+    <script>
+
+        let postArray = [
+            {
+                'user': 'Tagesschau_1',
+                'profilePicture': 'img/1contantUser.jpg',
+                'location': 'Berlin',
+
+                'image': 'img/1contant.jpg',
+
+                'likes': 305,
+
+                'description': 'Das ist die Nummer 1, schöne Zahl!',
+
+                'comments': [{
+                            'user': 'Rocco:',
+                            'commentUser': 'Kommentar Nummer 1',
+                            }], 
+
+
+            },
+
+                /* ---------------------------------- */
+
+            {
+                'user': 'Hart aber Fair_1',
+                'profilePicture': 'img/2contantUser.jpg',
+                'location': 'Berlin',
+
+                'image': 'img/2contant.jpg',
+            
+                'likes': 155,
+
+                'description': 'Das ist Nummer 2, Unglaublich oder?',
+                
+                'comments': [{
+                            'user': 'Gianni:',
+                            'commentUser': 'Kommentar Nummer 2',
+                            }], 
+
+
+
+            },
+
+                /* ---------------------------------- */
+
+
+            {
+                'user': 'Anne Will_3',
+                'profilePicture': 'img/3contantUser.jpg',
+                'location': 'Berlin',
+
+                'image': 'img/3contant.jpg',
+
+                'likes': 189,
+
+                'description': 'Das ist die Nummer 3, jetzt habe ich Hunger!',
+                
+                'comments': [{
+                            'user': 'Sara:',
+                            'commentUser': 'Kommentar Nummer 3',
+                            }], 
+
+            }
+        ];
+                /* ---------------------------------- */
+
+
+
+
+        //============ RENDERN (content) ===========
+
+        let content = document.getElementById('content');
+
+        function rendern() {
+            content.innerHTML = '';
+
+            for (let i = 0; i < postArray.length; i++) {
+                const postArrayIndex = postArray[i];
+
+                content.innerHTML += `
+
+                <div class="contentHeader">
+                    <div>
+                            <img src="${postArrayIndex['profilePicture']}"  class="contentProfilePicture">
+                    </div>
+
+                    <div> 
+                        <div>
+                            ${postArrayIndex['user']} 
+                        </div>
+
+                        <div> 
+                            ${postArrayIndex['location']} 
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./icon/menuBtns.ico" class="menu">
+                    </div>
+
+                </div>
+                        
+                          
+                
+
+                            
+                <div class="contentImage"> 
+                        <img src="${postArrayIndex['image']}"  class="contentImg"> 
+                </div>
+
+
+
+
+
+
+                <div class="contentBtns">
+
+                    <div class="contentBtnsLeft"> 
+                        <img src="./icon/heartBtns1.ico"  class="contentIcon contentHeartIcon" onclick="addlike()">
+
+                        <img src="./icon/commentsBtns.ico"  class="contentIcon">
+                        <img src="./icon/shareBtns.ico"  class="contentIcon">
+                    </div>
+
+                    <div class="contentBtnsRight">
+                        <img src="./icon/bookmarkBtns.ico"  class="contentIconBookmark">
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="contentComments">
+
+                    <div> 
+                        Gefällt  ${postArrayIndex['likes']} Mal
+                    </div>
+
+
+                    <div class="contentDescriptionContainer">
+                        <div> 
+                            ${postArrayIndex['user']} 
+                        </div>
+
+                        <div class="contentDescription"> 
+                            ${postArrayIndex['description']} 
+                        </div>          
+                    </div>
+
+                    
+                    <div id="commentID${i}"> 
+                    </div>
+
+                    <input id="commentInputID${i}" placeholder="Kommentieren">
+                    <button onclick="addComment(${i})"> OK </button>
+                    <br><br><br><br>
+
+                </div>
+
+                <hr>
+
+                <br><br>
+
+                `;
+
+
+
+
+//=================== Comments Function loop (hier entsteht Kommentar) ==============
+
+                    
+                let commentID = document.getElementById(`commentID${i}`);
+
+                for (let j = 0; j < postArrayIndex['comments'].length; j++) {
+                    let commentArray = postArrayIndex['comments'][j];
+
+                    commentID.innerHTML += `
+                    <div class="contentCommentContainerStyle">
+                    <span> ${commentArray['user']}</span>
+                    <span class="contentCommentStyle"> ${commentArray['commentUser']}</span><br>
+                    </div>
+                    `
+                    
+                }
+            }
+        }
+
+//=================== Add Comments Function==============
+
+        function addComment(i) {
+            let commentInput = document.getElementById(`commentInputID${i}`);
+
+            postArray[i]['comments'].push({ 'user': 'Simone:', 'commentUser': commentInput.value });
+
+            rendern();
+        }
+
+
+        function addlike () {              // damit funktioniert musst noch nicht ${i} übergeben
+            console.log("Hello world!");        //Siehe Console nach "click" es funktioniert!,
+                                                // egal welches Herz du clicks es geht, daher ${i} funktioniert
+
+            document.getElementById('contantID3').innerHTML = `<img src="./icon/heartBtns2.ico">` 
+                                                                //siehe bei ausführung ganz oben, das geht auch
+
+
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

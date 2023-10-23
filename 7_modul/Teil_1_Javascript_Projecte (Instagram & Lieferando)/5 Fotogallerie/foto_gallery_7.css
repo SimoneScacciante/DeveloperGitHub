@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Abel', sans-serif;
+    padding-right: 27px;
+    font-size: 5em;
+}
+
+
+.head-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.logo {
+    height: 6em;
+    margin-top: 55px;
+}
+
+.title_a_href {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(5, 0, 5, 0.9);
+    z-index: 1;    /*damit Hover effekt nicht in popup Image erscheint!*/
+                    /* dein Overlay was gesamter PopUp Image entspricht, steht nun im Vordergrund*/
+                    /*der Hover Effekt wird wie überspielt*/
+}
+
+.radius30px {
+    border-radius: 30px;
+}
+
+.imgLoadImages {
+    border-radius: 25px;
+    max-width: 300px;
+    /* Maximal Länge für alle Bilder im Titelbild*/
+    object-fit: cover;
+    /*sorgt dafür das Bild passend abgeschnitten wird*/
+    margin: 10px;
+    flex-grow: inherit;
+}
+
+.imgPopup {
+    border-radius: 25px;
+
+}
+
+.backspace-container {
+    display: flex;
+}
+
+.backspace {
+    cursor: pointer;
+    height: 80px;
+    position: absolute;
+    top: 120px;
+    left: 88%; /*in Prozent, damit responsive leichter wird zu */
+
+}
+
+.right-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
+
+.left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 3%; /*in Prozent angeben damit Pfeil immer an Kante bleibt*/
+}
+
+.arrow-img {
+    height: 80px;
+    border-radius: 25px;
+}
+
+#photo-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.imgbox {
+    display: flex;
+    height: 250px;
+    cursor: pointer;
+    flex: auto;                /* sorgt dafür das Bilder automatisch sortiert */
+    justify-content: center;
+    
+    /* flex-grow: inherit;    dieser Befehl sortiert Bilder*/
+}
+
+.imgbox:hover {
+    filter: brightness(0.6);
+    transform: scale(1.05);
+    border-radius: 25px;
+
+    /*pointer-events:    ; */
+}
+
+#full-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 75vw;
+    height: 50vw;
+}
+
+.d-none {
+    display: none;
+}
+
+
+
+
+
+/* Popup Image Responsive */
+
+
+@media (max-width:1100px) {
+
+    .arrow-img {
+        height: 8vw;
+    }
+
+    .backspace {
+        height: 8vw;
+    }
+}
+
+@media (max-width:480px) {
+
+    .backspace {
+        top: 170px;
+    }
+}
+
+
+
+
+
+
+/*Main Page Responsive*/
+
+@media (max-width:1180px) {
+
+    .title {
+        font-size: 3em;
+        margin-top: 45px;
+    }
+
+    .logo {
+        height: 3em;
+    }
+}
+
+
+@media (max-width:680px) {
+
+    .title {
+        font-size: 2em;
+        margin-top: 47px;
+    }
+
+    .logo {
+        height: 2em;
+    }
+
+    #photo-box {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:380px) {
+
+    #photo-box {
+        flex-direction: column;
+    }
+
+    .imgLoadImages {
+       max-width: 30vh;
+       max-height: 40vh;
+    }
+
+}
+
+

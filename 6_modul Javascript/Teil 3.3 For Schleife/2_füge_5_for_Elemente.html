@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px 200px;
+        }
+
+        p {
+            margin-top: 64px;
+        }
+    </style>
+
+    <script>
+        function init() {
+            exercise2();
+        }
+
+        function exercise2() {
+            let list2 = document.getElementById('list2');
+
+            for (let i = 0; i < 6; i++) {
+                list2.innerHTML += `<li>${i}</li>`;
+            }
+
+        }
+
+    </script>
+</head>
+
+<body onload="init()">
+
+    <p>2) Füge 5 <code>&lt;li&gt;</code> Elemente ein, um die Zahlen von 1 bis 5 darzustellen.</p>
+    <ul id="list2">
+
+    </ul>
+
+</body>
+
+</html>

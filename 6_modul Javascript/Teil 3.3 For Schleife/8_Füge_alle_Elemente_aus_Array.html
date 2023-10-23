@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px 200px;
+        }
+
+        p {
+            margin-top: 64px;
+        }
+    </style>
+
+    <script>
+        let fruits = ['Apple', 'Banana', 'Strawberry', 'Blackberry', 'Raspberry', 'Test'];
+        let amount = ['3x', '1x', '250g', '200g', '100g'       ];
+
+        function exercise8() {
+
+            for (let i = 0; i < 6; i++) {
+                document.getElementById('list8').innerHTML += `<li>${amount[i]} ${fruits[i]}</li>`
+            }
+        }
+    </script>
+</head>
+
+<body onload="exercise8()">
+
+    <p>8) Füge alle Elemente aus <code>fruits</code> und <code>amount</code> in die Liste ein. Also <b>3x Apple</b>,
+        <b>1x Banana</b> usw.
+    </p>
+    
+    <ul id="list8">
+    </ul>
+
+
+</body>
+
+</html>

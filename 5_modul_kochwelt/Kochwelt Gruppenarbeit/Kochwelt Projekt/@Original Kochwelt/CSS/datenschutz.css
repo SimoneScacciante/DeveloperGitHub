@@ -1,0 +1,28 @@
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.block {
+    display: block !important;
+}
+
+
+@media(max-width:600px) {
+    .center {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:350px) {
+    .center {
+        font-size: 8px;
+    }
+}

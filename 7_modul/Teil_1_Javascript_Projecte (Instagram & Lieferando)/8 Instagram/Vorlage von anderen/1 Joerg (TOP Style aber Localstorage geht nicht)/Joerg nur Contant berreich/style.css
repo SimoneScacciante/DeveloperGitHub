@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+/* =========== LAYOUT =========== */
+body {
+    display: flex;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 630px;
+    height: 500px;
+    padding: 0 px;
+}
+
+/* =============== SIDEBAR =============== */
+
+
+.suggContainer {
+    display: flex;
+    width: 100%;
+}
+.suggContainer img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid rgb(243, 243, 243);
+}
+.suggContainer p {
+    margin-left: 16px;
+}
+
+.profileNameBold {
+    font-weight: 500;
+}
+.changeUser, .follow {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #129AF7;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+/* ========= CONTENT ========= */
+
+.contentLocation {
+    font-size: 12px;
+    line-height: 20px;
+}
+.marginLeft {
+    margin-left: 16px;
+}
+.dots {
+    margin-left: auto;
+    cursor: pointer;
+    opacity: .5;
+}
+.likes {
+    margin-bottom: 4px;
+}
+.likeHeart {
+    cursor: pointer;
+}
+.likeRed {
+    color: rgb(226, 10, 10);
+}
+.contentImage img {
+    width: 470px;
+    max-height: 585px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.contentBtns {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.contentBtnsLeft {
+    height: 100%;
+    display: flex;
+    padding: 8px 0;
+    gap: 16px;
+}
+
+.fontSize14 {
+    font-size: 14px;
+}
+.bold {
+    font-weight: 500;
+}
+.comment {
+    margin-left: 8px;
+}
+input {
+    margin-top: 4px;
+    outline: none;
+    border: 0;
+}
+.inputContainer {
+    display: flex;
+    align-items: center;
+}
+.smilie {
+    margin-left: 8px;
+    font-size: 15px;
+}
+hr {
+    opacity: 0.5;
+}
+
+
+
+
+
+/* ================= MEDIA QUERYS ========== */
+@media only screen and (max-width: 1920px) {
+    .navLeft, .placeholder {
+        width: 240px;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    .navLeft, .placeholder {
+        width: 92px;
+        overflow: hidden;
+    }
+    .navLeft span {
+        display: none;
+    }
+    .logoSmallScreen {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1320px) {
+    .suggestionsSidebar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .headerSmallScreenContainer {
+        display: block;
+    }
+    .navLeft, .placeholder {
+        display: none;
+    }
+    .navBottom {
+        display: flex;
+    }
+    .content, .storys {
+        width: 100%;
+        padding: 0 8px;
+        height: 100%;
+    }
+    .contentContainer {
+        overflow: hidden;
+    }
+    .contentHeader, .contentContainerSize {
+        width: 100%;
+    }
+    .contentImage img {
+        width: 100%;
+        max-height: 585px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .logoTextTop {
+        display: none;
+    }
+}

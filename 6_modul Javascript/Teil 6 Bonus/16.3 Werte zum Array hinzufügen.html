@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let names = ['Davide', 'Clara', 'Christian', 'Petra'];
+
+
+
+        function addNames() {
+            let list = document.getElementById('list');
+            list.innerHTML = ''; //dadurch wird im ZWEITEN durchlauf die 
+                                  //Zweite liste gelöscht und "Name des Freundes" 
+                                  //wird hier eingefügt
+        
+
+            for (let i = 0; i < names.length; i++) {
+                let li = document.createElement('li');
+                li.innerHTML = names[i];
+                list.appendChild(li);
+            }
+        }
+
+        function addCurrentName() {
+            let currentName = document.getElementById('new-name').value;
+            names.push(currentName) 
+
+            addNames(); 
+        }
+    </script>
+
+</head>
+
+<body onload="addNames()">
+    <ul id='list'>
+    </ul>
+
+    <input id="new-name" placeholder="Name deines Freundes"> <button onclick="addCurrentName()">Hinzufügen</button>
+</body>
+
+</html>
